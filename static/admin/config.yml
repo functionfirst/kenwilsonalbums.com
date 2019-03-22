@@ -1,12 +1,12 @@
 backend:
-  # Choose the backend you prefer (GitHub, GitLab, BitBucket)
-  # Reference: https://www.netlifycms.org/docs/authentication-backends/
-  name: github
+  name: git-gateway
   branch: master
   repo: functionfirst/kenwilsonalbums.com
 
 media_folder: "static/images"
 public_folder: "static/images"
+
+publish_mode: editorial_workflow
 
 collections:
   - name: "blogs"
