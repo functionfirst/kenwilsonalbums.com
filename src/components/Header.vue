@@ -1,47 +1,30 @@
 <template>
-  <header>
-    <ul>
-      <li>
-        <a href="/#work">Work</a>
-      </li>
-      <li>
-        <a href="/#about">About</a>
-      </li>
-      <li class="Header__Profile__Image">
-        <g-link to="/">
-          <g-image src="~/assets/images/gridsome.png"/>
-        </g-link>
-      </li>
-      <li style="text-align: right">
-        <a href="/#blog">Blogs</a>
-      </li>
-      <li style="text-align: right">
-        <a href="/#contact">Contact</a>
-      </li>
-    </ul>
+  <header class="flex items-center max-w-2xl mx-auto justify-between">
+      <g-link to="/" class="no-underline p-4 text-lighter flex flex-col hover:text-dark">
+        <span class="font-bold text-xl">Ken Wilson</span>
+        <span class="mt-1 font-serif text-sm text-dark">Folk Music &amp; Art</span>
+      </g-link>
+
+      <Nav/>
+
+      <a href="https://www.facebook.com/profile.php?id=100014788714532" target="_blank" class="py-4 px-6 flex items-center text-lighter hover:text-dark no-underline">
+        <div class="bg-lighter text-darker rounded-full p-2 mr-2 flex items-center justify-center">
+            <facebook-icon/>
+            <!-- <svg class="fill-current w-4 h-4" viewBox="0 0 13 32" height="18" width="13"><use xlink:href="#icon-facebook"></use></svg> -->
+        </div>
+        Follow Ken on Facebook
+      </a>
   </header>
 </template>
 
-<style lang="sass" scoped>
-  header
-    padding: 50px 0
+<script>
+import Nav from '~/components/Nav'
+import FacebookIcon from '~/components/icons/Facebook'
 
-    ul
-      display: flex
-      flex-direction: row
-      align-items: center
-      text-transform: uppercase
-
-      li
-        flex: 1 1 0
-        color: #4DBA87
-        font-size: 0.75rem
-        font-weight: 700
-
-  .Header__Profile__Image
-    text-align: center
-
-    img
-      width: 50px
-      border-radius: 50px
-</style>
+export default {
+  components: {
+    Nav,
+    FacebookIcon
+  }
+}
+</script>

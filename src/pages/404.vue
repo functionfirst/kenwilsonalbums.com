@@ -1,0 +1,6 @@
+<template>
+  <Layout>
+    <h1>404</h1>
+    <p>Something went wrong..</p>
+  </Layout>
+</template>
