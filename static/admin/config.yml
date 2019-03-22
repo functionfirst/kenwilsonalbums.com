@@ -37,7 +37,10 @@ collections:
         file: "src/data/Albums.yml"
         fields:
           - { label: "Title", name: "title", widget: "string" }
+          - { label: "Aside", name: "aside", widget: "string" }
+          - { label: "Link", name: "url", widget: "string" }
           - { label: "Description", name: "description", widget: "text" }
+          - { label: "Image", name: "image", widget: "image" }
           - { label: "Price", name: "price", widget: "number", default: 10.00, valueType: "float", min: 1 }
           - name: "postage"
             label: "Postage"

@@ -12,8 +12,7 @@
             </h2>
         </div>
         <div>
-            <p class="leading-normal my-4 max-w-sm">
-                <span v-html="item.description"/>
+            <p class="leading-normal my-4 max-w-sm markup" v-html="item.description">
             </p>
         </div>
     </div>
