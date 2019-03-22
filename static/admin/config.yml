@@ -6,8 +6,6 @@ backend:
 media_folder: "static/images"
 public_folder: "static/images"
 
-publish_mode: editorial_workflow
-
 collections:
   - name: "blogs"
     label: "Blogs"
@@ -34,41 +32,16 @@ collections:
             fields:
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Description", name: "description", widget: "text" }
-
-      - name: "contact"
-        label: "Contact"
-        file: "src/data/Contact.yml"
-        fields:
-          - { label: "Title", name: "title", widget: "string", default: "Contact" }
-          - { label: "Description", name: "description", widget: "text" }
-
-      - name: "hero"
-        label: "Hero"
-        file: "src/data/Hero.yml"
+      - name: "albums"
+        label: "Albums"
+        file: "src/data/Albums.yml"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Description", name: "description", widget: "text" }
-
-      - name: "portfolio"
-        label: "Portfolio"
-        file: "src/data/Portfolio.yml"
-        fields:
-          - { label: "Title", name: "title", widget: "string", default: "Portfolio" }
-          - name: "items"
-            label: "Work"
+          - { label: "Price", name: "price", widget: "number", default: 10.00, valueType: "float", min: 1 }
+          - name: "postage"
+            label: "Postage"
             widget: "list"
             fields:
               - { label: "Title", name: "title", widget: "string" }
-              - { label: "Image", name: "image", widget: "image" }
-
-      - name: "socialmedia"
-        label: "Social Media"
-        file: "src/data/SocialMedia.yml"
-        fields:
-          - { label: "Title", name: "title", widget: "string", default: "Social Media" }
-          - name: "items"
-            label: "Social Media"
-            widget: "list"
-            fields:
-              - { label: "Name", name: "name", widget: "string" }
-              - { label: "URL", name: "url", widget: "string" }
+              - { label: "Price", name: "price", widget: "number", valueType: "float" }

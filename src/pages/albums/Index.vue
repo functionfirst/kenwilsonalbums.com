@@ -32,7 +32,7 @@
       <g-image src="/images/portraits.jpg" />
 
         <div class="ml-8 leading-normal max-w-md">
-            <h2>Portraits</h2>
+            <h2><g-link class="text-darker hover:text-dark no-underline" to="/albums/portraits/">Portraits</g-link></h2>
 
             <p class="my-4 text-sm italic">
                 Recorded at Shoebox Studios, Newcastle.
