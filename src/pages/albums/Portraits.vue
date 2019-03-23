@@ -1,8 +1,8 @@
 <template>
   <Layout>
-    <h1 class="leading-loose font-normal">{{ album.title }}</h1>
+    <h1 v-if="album" class="leading-loose font-normal">{{ album.title }}</h1>
 
-    <div class="md:flex">
+    <div class="md:flex" v-if="album">
       <div class="flex justify-center items-start">
         <g-image :src="`/images/${album.image}`" />
       </div>
@@ -17,7 +17,7 @@
         <p class="my-4 markup">{{ album.description }}</p>
       </div>
 
-      <paypal-button :item="item" />
+      <paypal-button :item="album" />
     </div>
   </Layout>
 </template>
@@ -32,27 +32,15 @@ export default {
   },
   created () {
     this.album = Albums.items.find(item => item.url == this.$route.fullPath)
-    this.getAlbumData();
   },
   computed: {
     totalPrice() {
       return this.delivery + this.price;
     }
   },
-  methods: {
-    getAlbumData() {
-      this.item = {
-        name: this.album.name,
-        number: this.album.code,
-        amount: this.album.price,
-        postage: this.album.postage
-      };
-    }
-  },
   data () {
     return {
-      album: null,
-      item: null
+      album: null
     }
   },
   metaInfo: {
