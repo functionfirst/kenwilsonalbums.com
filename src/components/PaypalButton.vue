@@ -36,7 +36,7 @@
 export default {
   computed: {
     totalPrice() {
-      return this.shipping + this.item.amount
+      return this.shipping + this.item.price
     },
     paypalUrl() {
       return `https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=${this.business}&item_name=${this.item.name}&amount=${this.item.amount}&currency_code=${this.currencyCode}&item_number=${this.item.number}&shipping=${this.shipping}`

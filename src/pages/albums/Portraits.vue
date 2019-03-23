@@ -1,47 +1,37 @@
 <template>
   <Layout>
-    <h1 v-if="album" class="leading-loose font-normal">{{ album.title }}</h1>
+    <album-data>
+      <div slot-scope="{ album }" v-if="album">
+        <h1 class="leading-loose font-normal">{{ album.title }}</h1>
 
-    <div class="md:flex" v-if="album">
-      <div class="flex justify-center items-start">
-        <g-image :src="`/images/${album.image}`" />
+        <div class="md:flex">
+          <div class="flex justify-center items-start">
+            <g-image :src="`/images/${album.image}`" />
+          </div>
+
+          <div class="md:mx-8 leading-normal">
+            <p v-if="album.aside" class="mb-4 text-sm italic">
+              {{ album.aside }}
+            </p>
+
+            <p class="my-4 markup">{{ album.description }}</p>
+          </div>
+
+          <paypal-button :item="album" />
+        </div>
       </div>
-
-      <div class="mt-4 md:mt-0 md:mx-8 leading-normal">
-        <!-- <h2>{{ album.title }}</h2> -->
-
-        <p v-if="album.aside" class="my-4 text-sm italic">
-          {{ album.aside }}
-        </p>
-
-        <p class="my-4 markup">{{ album.description }}</p>
-      </div>
-
-      <paypal-button :item="album" />
-    </div>
+    </album-data>
   </Layout>
 </template>
 
 <script>
 import PaypalButton from '~/components/PaypalButton'
-import Albums from '~/data/Albums.yml'
+import AlbumData from '~/components/DataAlbum'
 
 export default {
   components: {
+    AlbumData,
     PaypalButton
-  },
-  created () {
-    this.album = Albums.items.find(item => item.url == this.$route.fullPath)
-  },
-  computed: {
-    totalPrice() {
-      return this.delivery + this.price;
-    }
-  },
-  data () {
-    return {
-      album: null
-    }
   },
   metaInfo: {
     title: 'Portraits by Ken Wilson'
