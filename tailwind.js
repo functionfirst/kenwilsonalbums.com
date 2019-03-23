@@ -50,7 +50,8 @@ let colors = {
   'light': '#f2f2f0',
   'base': '#eaeae5',
   'dark': '#b5a9a0',
-  'darker': '#383333'
+  'darker': '#383333',
+  'danger': '#c00',
 }
 
 module.exports = {

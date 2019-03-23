@@ -2,7 +2,7 @@
   <Layout>
     <h1 class="leading-loose font-normal">{{ album.title }}</h1>
 
-    <div class="md:flex">
+    <div class="md:flex items-start">
       <div class="flex justify-center items-start">
         <g-image :src="`/images/${album.image}`" />
       </div>
@@ -56,7 +56,7 @@ export default {
     }
   },
   metaInfo: {
-    title: 'Portraits by Ken Wilson'
+    title: 'Not Before Time by Ken Wilson'
   }
 }
 </script>

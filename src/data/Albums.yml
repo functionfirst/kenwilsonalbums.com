@@ -3,6 +3,8 @@ items:
   - title: Here's a Health to the Company
     aside: Recorded at Shoebox Studios, Newcastle.
     image: heres_a_health.jpg
+    name: Here's a Health to the Company - Album - CD
+    code: KWIL-003
     url: /albums/heres-a-health-to-the-company/
     description: >-
       Jim MacFarland is a Derryman and is one of Ireland's finest traditional singers.
@@ -19,12 +21,14 @@ items:
     postage:
       - title: "UK/Europe"
         price: 2.00
-      - title: "USA"
+      - title: "Rest of the World"
         price: 4.10
 
   - title: Portraits
     aside: Recorded at Shoebox Studios, Newcastle.
     image: portraits.jpg
+    name: Portraits - Album - CD
+    code: KWIL-002
     url: /albums/portraits/
     description: >-
       This my second 'solo' album is again a mix of Traditional and contemory songs! I have
@@ -34,12 +38,14 @@ items:
     postage:
       - title: "UK/Europe"
         price: 2.00
-      - title: "USA"
+      - title: "Rest of the World"
         price: 4.10
 
   - title: Not Before Time
     aside: Recorded at Shoebox Studios, Newcastle.
     image: notbeforetime.jpg
+    name: Not Before Time - Album - CD
+    code: KWIL-001
     url: /albums/not-before-time/
     description: >-
       This album is a collection of songs, some of which I have been singing for the past
@@ -64,5 +70,5 @@ items:
     postage:
       - title: "UK/Europe"
         price: 2.00
-      - title: "USA"
+      - title: "Rest of the World"
         price: 4.10

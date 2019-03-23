@@ -8,7 +8,7 @@
       </div>
 
       <div class="mt-4 md:mt-0 md:mx-8 leading-normal">
-        <!-- <h2>{{ album.title }}</h2> -->
+        
 
         <p v-if="album.aside" class="my-4 text-sm italic">
           {{ album.aside }}
@@ -56,7 +56,7 @@ export default {
     }
   },
   metaInfo: {
-    title: 'Portraits by Ken Wilson'
+    title: 'Here\'s a Health to the Company by Ken Wilson'
   }
 }
 </script>

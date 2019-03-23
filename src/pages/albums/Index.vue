@@ -8,7 +8,11 @@
        </g-link>
        
       <div class="ml-8 leading-normal max-w-md">
-        <h2>{{ album.title }}</h2>
+        <h2>
+          <g-link :to="album.url" class="text-darker hover:text-dark">
+            {{ album.title }}
+          </g-link>
+        </h2>
 
          <p v-if="album.aside" class="my-4 text-sm italic">
             {{ album.aside }}
