@@ -44,6 +44,14 @@ module.exports = {
 				typeName: 'ArtPost',
 				route: '/art/:slug'
 			}
+		},
+		{
+			use: '@gridsome/source-filesystem',
+			options: {
+				path: 'gigs/*.md',
+				typeName: 'GigsPost',
+				route: '/gigs/:slug'
+			}
 		}
 	]
 }

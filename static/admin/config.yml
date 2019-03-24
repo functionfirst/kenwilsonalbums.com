@@ -29,13 +29,24 @@ collections:
       - { label: "Link", name: "url", widget: "string" }
       - { label: "Description", name: "description", widget: "text" }
       - { label: "Image", name: "image", widget: "image" }
-      - { label: "Price", name: "price", widget: "number", default: 10.00, valueType: "float" }
-      - name: "postage"
-        label: "Postage"
-        widget: "list"
-        fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Price", name: "price", widget: "number", valueType: "float" }
+
+  - name: "gigs"
+    label: "Gigs"
+    folder: "gigs"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Location", name: "locaiton", widget: "location" }
+      - { label: "URL", name: "url", widget: "url", required: false }
+      - { label: "Start Date", name: "date_start", widget: "date" }
+      - { label: "End Date", name: "date_start", widget: "date", required: false }
+      - label: "Type"
+        name: "type"
+        widget: "select"
+        options:
+          - { label: "Ken Wilson", value: "solo" }
+          - { label: "Wilson Family", value: "wilson" }
 
   - name: "data"
     label: "Data"
@@ -46,17 +57,4 @@ collections:
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Description", name: "description", widget: "text" }
-      - name: "gigs"
-        label: "Gigs"
-        file: "src/data/Gigs.yml"
-        fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Location", name: "locaiton", widget: "location" }
-          - { label: "URL", name: "url", widget: "url" }
-          - { label: "Date", name: "date", widget: "date" }
-          - label: "Type"
-            name: "type"
-            widget: "select"
-            options:
-              - { label: "Ken Wilson", value: "solo" }
-              - { label: "Wilson Family", value: "wilson" }
+     
