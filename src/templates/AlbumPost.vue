@@ -15,8 +15,6 @@
 
       <paypal-button :item="$page.albumPost" />
     </div>
-
-    {{ $page.albumPost }}
   </Layout>
 </template>
 
