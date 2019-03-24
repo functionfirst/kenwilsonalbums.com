@@ -1,20 +1,22 @@
 <template>
-  <div class="rounded bg-base p-4 shadow-inner">
+  <div class="flex flex-col self-start rounded bg-base p-4 shadow-inner">
     <h2 class="font-light mb-2">Buy the Album</h2>
 
-    <h3>
-      Price: {{ formatPrice(totalPrice) }}
-      <span v-if="shipping === 0">+ delivery</span>
+    <h3 class="flex">
+      <span class="font-thin text-sm self-start mr-2">Price: </span>
+      <span>{{ formatPrice(totalPrice) }}</span>
+      <span class="font-thin text-sm ml-1 self-end" v-if="shipping === 0">+ delivery</span>
     </h3>
 
-    <p class="my-4" :class="{ 'text-danger font-bold': error }">
-      Please select a delivery option
+    <p class="mt-4 text-sm" :class="{ 'text-danger': error}">
+      Delivery:
+      <span v-if="error">*</span>
     </p>
 
     <label
       v-for="(post, index) in item.postage"
       :key="index"
-      class="flex items-center cursor-pointer my-4 hover:text-dark"
+      class="flex items-center cursor-pointer my-2 hover:text-dark"
     >
       <input type="radio" name="delivery" :value="post.price" @change="updateShipping(post.price)">
       <div class="ml-2">
@@ -22,6 +24,10 @@
         <span class="ml-2 font-bold">{{ formatPrice(post.price) }}</span>
       </div>
     </label>
+
+    <p v-if="error" class="my-1 text-sm text-danger font-bold">
+      *delivery location required
+    </p>
 
     <button
       @click="buy()"
@@ -39,7 +45,7 @@ export default {
       return this.shipping + this.item.price
     },
     paypalUrl() {
-      return `https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=${this.business}&item_name=${this.item.name}&amount=${this.item.amount}&currency_code=${this.currencyCode}&item_number=${this.item.number}&shipping=${this.shipping}`
+      return `https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=${this.business}&item_name=${this.item.name}&amount=${this.item.price}&currency_code=${this.currencyCode}&item_number=${this.item.number}&shipping=${this.shipping}`
     }
   },
   props: {

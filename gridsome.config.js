@@ -19,7 +19,7 @@ module.exports = {
 	// siteUrl: 'https://www.gridsome.org',
 	// siteDescription: 'Gridsome is a blazing-fast static site generator...',
 	titleTemplate: `%s`,
-	
+
 	plugins: [
 		{
 			use: '@gridsome/source-filesystem',
@@ -27,6 +27,14 @@ module.exports = {
 				path: 'blog/*.md',
 				typeName: 'BlogPost',
 				route: '/blog/:slug'
+			}
+		},
+		{
+			use: '@gridsome/source-filesystem',
+			options: {
+				path: 'albums/*.md',
+				typeName: 'AlbumPost',
+				route: '/albums/:slug'
 			}
 		}
 	]
