@@ -4,8 +4,7 @@
 
     <div class="md:flex items-start">
       <div class="flex-1x w-1/2 mr-12">
-        <img :src="`/images/${$page.art.image}`" />
-        <!-- <g-image :src="`/images/${$page.art.image}`" /> -->
+        <g-image :src="$page.art.image" :alt="`Image of ${$page.art.title}`" />
         <div class="content" v-html="$page.art.content"></div>
       </div>
 
@@ -21,7 +20,7 @@ query ArtPost ($path: String!) {
   art: artPost (path: $path) {
     title
     content
-    image
+    image (width: 560, quality: 70, fit: inside)
   }
 }
 </page-query>

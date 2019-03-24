@@ -1,6 +1,6 @@
 ---
 title: Christ
 slug: christ
-image: uploads/christ.jpg
+image: /images/uploads/christ.jpg
 ---
 Picture of Christ

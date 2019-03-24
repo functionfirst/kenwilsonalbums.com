@@ -1,6 +1,6 @@
 ---
 title: Nic
 slug: nic
-image: uploads/nic.jpg
+image: /images/uploads/nic.jpg
 ---
 Picture of Nic

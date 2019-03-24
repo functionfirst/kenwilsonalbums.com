@@ -1,6 +1,6 @@
 ---
 title: Tiger
 slug: tiger
-image: uploads/tiger.jpg
+image: /images/uploads/tiger.jpg
 ---
 Picture of Tiger

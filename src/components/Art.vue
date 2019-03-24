@@ -3,7 +3,7 @@
     <div class="flex items-start w-1/4 mb-2" v-for="({ node }) in $static.allArtPost.edges" :key="node.id">
       <g-link :to="node.slug" class="hover:opacity-75 relative m-2 flex flex-col hover:bg-base no-underline">
         <div class="flex-1">
-          <img :src="`/images/${node.image}`" />
+          <g-image :src="node.image" :alt="`Image of ${node.title}`" />
         </div>
 
         <p class="text-sm absolute p-2 opacity-75 pin-b pin-l pin-r bg-darker text-lighter text-center">
@@ -21,7 +21,7 @@ query Art {
       node {
         id
         slug
-        image
+        image (width: 265, quality: 60, fit: inside)
         title
         path
         content
