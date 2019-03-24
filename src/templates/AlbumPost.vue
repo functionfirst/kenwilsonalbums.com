@@ -25,11 +25,6 @@
       image
       aside
       name
-      postage {
-        title
-        price
-      }
-      price
       content
     }
   }

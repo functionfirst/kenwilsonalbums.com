@@ -24,9 +24,9 @@ module.exports = {
 		{
 			use: '@gridsome/source-filesystem',
 			options: {
-				path: 'blog/*.md',
-				typeName: 'BlogPost',
-				route: '/blog/:slug'
+				path: 'News/*.md',
+				typeName: 'NewsPost',
+				route: '/News/:slug'
 			}
 		},
 		{
@@ -35,6 +35,14 @@ module.exports = {
 				path: 'albums/*.md',
 				typeName: 'AlbumPost',
 				route: '/albums/:slug'
+			}
+		},
+		{
+			use: '@gridsome/source-filesystem',
+			options: {
+				path: 'art/*.md',
+				typeName: 'ArtPost',
+				route: '/art/:slug'
 			}
 		}
 	]

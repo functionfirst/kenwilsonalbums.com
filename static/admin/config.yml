@@ -7,9 +7,9 @@ media_folder: "static/images"
 public_folder: "static/images"
 
 collections:
-  - name: "blogs"
-    label: "Blogs"
-    folder: "blog"
+  - name: "news"
+    label: "News"
+    folder: "news"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
@@ -44,13 +44,8 @@ collections:
         label: "About"
         file: "src/data/About.yml"
         fields:
-          - { label: "Title", name: "title", widget: "string", default: "About" }
-          - name: "items"
-            label: "Items"
-            widget: "list"
-            fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "Description", name: "description", widget: "text" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
       - name: "gigs"
         label: "Gigs"
         file: "src/data/Gigs.yml"

@@ -3,10 +3,10 @@
     <Header/>
     <div class="article">
       <div class="meta">
-        <h1>{{ $page.blogPost.title }}</h1>
-        <span>{{ $page.blogPost.date }}</span>
+        <h1>{{ $page.newsPost.title }}</h1>
+        <span>{{ $page.newsPost.date }}</span>
       </div>
-      <div class="article__content" v-html="$page.blogPost.content" />
+      <div class="article__content" v-html="$page.newsPost.content" />
     </div>
     <Footer/>
   </Layout>
@@ -23,15 +23,15 @@
     },
     metaInfo () {
       return {
-        title: this.$page.blogPost.title
+        title: this.$page.newsPost.title
       }
     }
   }
 </script>
 
 <page-query>
-  query BlogPost ($path: String!) {
-    blogPost (path: $path) {
+  query NewsPost ($path: String!) {
+    newsPost (path: $path) {
       title
       date (format: "DD MMMM YYYY")
       content

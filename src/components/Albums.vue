@@ -2,7 +2,7 @@
   <div>
     <div class="flex items-start mb-12" v-for="({ node }) in $static.albums.edges" :key="node.id">
       <g-link :to="node.slug">
-        <g-image :src="`/images/${node.image}`" />
+        <g-image width="50" :src="`/images/${node.image}`" />
       </g-link>
 
       <div class="ml-8 leading-normal max-w-md">

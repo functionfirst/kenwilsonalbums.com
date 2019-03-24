@@ -1,5 +1,5 @@
 <template>
-  <header class="flex items-center max-w-2xl mx-auto justify-between">
+  <header class="flex items-center max-w-2xl mx-auto justify-between w-full">
       <g-link to="/" class="no-underline p-4 text-lighter flex flex-col hover:text-dark">
         <span class="font-bold text-xl">Ken Wilson</span>
         <span class="mt-1 font-serif text-sm text-dark">Folk Music &amp; Art</span>

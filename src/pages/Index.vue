@@ -1,15 +1,15 @@
 <template>
   <Layout>
-    <Blog/>
+    <News/>
   </Layout>
 </template>
 
 <script>
-import Blog from '~/components/Blog.vue';
+import News from '~/components/News.vue';
 
 export default {
   components: { 
-    Blog
+    News
   },
   metaInfo: {
     title: 'Ken Wilson Folk Singer and Artist'

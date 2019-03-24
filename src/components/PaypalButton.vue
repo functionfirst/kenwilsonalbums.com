@@ -8,13 +8,13 @@
       <span class="font-thin text-sm ml-1 self-end" v-if="shipping === 0">+ delivery</span>
     </h3>
 
-    <p class="mt-4 text-sm" :class="{ 'text-danger': error}">
+    <p class="mt-6 text-sm" :class="{ 'text-danger': error}">
       Delivery:
       <span v-if="error">*</span>
     </p>
 
     <label
-      v-for="(post, index) in item.postage"
+      v-for="(post, index) in postage"
       :key="index"
       class="flex items-center cursor-pointer my-2 hover:text-dark"
     >
@@ -42,10 +42,10 @@
 export default {
   computed: {
     totalPrice() {
-      return this.shipping + this.item.price
+      return this.shipping + this.price
     },
     paypalUrl() {
-      return `https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=${this.business}&item_name=${this.item.name}&amount=${this.item.price}&currency_code=${this.currencyCode}&item_number=${this.item.number}&shipping=${this.shipping}`
+      return `https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=${this.business}&item_name=${this.item.name}&amount=${this.price}&currency_code=${this.currencyCode}&item_number=${this.item.number}&shipping=${this.shipping}`
     }
   },
   props: {
@@ -76,6 +76,14 @@ export default {
   },
     data () {
     return {
+      price: 10,
+      postage: [{
+        title: "UK/Europe",
+        price: 2.00
+      },{
+        title: "Rest of the World",
+        price: 4.10
+      }],
       loading: false,
       error: false,
       currencyCode: "GBP",
