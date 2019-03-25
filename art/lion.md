@@ -1,6 +1,6 @@
 ---
 title: Lion
 slug: lion
-image: /images/uploads/lion.jpg
+image: ./images/lion.jpg
 ---
 Picture of Lion

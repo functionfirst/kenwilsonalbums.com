@@ -1,6 +1,6 @@
 ---
 title: Ken
 slug: ken
-image: /images/uploads/ken.jpg
+image: ./images/ken.jpg
 ---
 Picture of Ken

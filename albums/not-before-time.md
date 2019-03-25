@@ -2,7 +2,7 @@
 title: Not Before Time
 slug: not-before-time
 aside: Recorded at Shoebox Studios, Newcastle.
-image: notbeforetime.jpg
+image: ./images/notbeforetime.jpg
 name: Not Before Time - Album - CD
 code: KWIL-001
 ---

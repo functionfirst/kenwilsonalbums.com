@@ -1,6 +1,6 @@
 ---
 title: Martin
 slug: martin
-image: /images/uploads/martin.jpg
+image: ./images/martin.jpg
 ---
 Picture of Martin

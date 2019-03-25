@@ -2,7 +2,7 @@
 title: Portraits
 slug: portraits
 aside: Recorded at Shoebox Studios, Newcastle.
-image: portraits.jpg
+image: ./images/portraits.jpg
 name: Portraits - Album - CD
 code: KWIL-002
 ---

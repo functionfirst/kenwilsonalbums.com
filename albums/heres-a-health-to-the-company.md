@@ -2,7 +2,7 @@
 title: Here's a Health to the Company
 slug: heres-a-health-to-the-company
 aside: Recorded at Shoebox Studios, Newcastle.
-image: heres_a_health.jpg
+image: ./images/heres_a_health.jpg
 name: Here's a Health to the Company - Album - CD
 code: KWIL-003
 ---

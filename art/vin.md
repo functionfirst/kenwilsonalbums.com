@@ -1,6 +1,6 @@
 ---
 title: Vin Garbutt
 slug: vin
-image: /images/uploads/vin.jpg
+image: ./images/vin.jpg
 ---
 Picture of Vin Garbutt

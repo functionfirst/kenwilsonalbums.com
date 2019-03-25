@@ -1,6 +1,6 @@
 ---
 title: Mandy & Mia
 slug: mandy-mia
-image: /images/uploads/mandy-mia.jpg
+image: ./images/mandy-mia.jpg
 ---
 Picture of Mandy & Mia

@@ -1,6 +1,6 @@
 ---
 title: Sting
 slug: sting
-image: /images/uploads/sting.jpg
+image: ./images/sting.jpg
 ---
 Picture of Sting

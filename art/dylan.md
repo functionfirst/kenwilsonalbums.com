@@ -1,6 +1,6 @@
 ---
 title: Dylan
 slug: dylan
-image: /images/uploads/dylan.jpg
+image: ./images/dylan.jpg
 ---
 Picture of Dylan
