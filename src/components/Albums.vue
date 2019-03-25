@@ -2,7 +2,7 @@
   <div>
     <div class="flex items-start mb-12" v-for="({ node }) in $static.albums.edges" :key="node.id">
       <g-link :to="node.slug">
-        <g-image width="50" :src="`/images/${node.image}`" />
+        <g-image :src="node.image" />
       </g-link>
 
       <div class="ml-8 leading-normal max-w-md">
@@ -30,7 +30,7 @@ query Albums {
         id
         slug
         aside
-        image
+        image (width: 225, quality: 70, fit: inside)
         title
         path
         content

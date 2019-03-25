@@ -3,7 +3,7 @@
     <h1 class="leading-loose font-normal">{{ $page.albumPost.title }}</h1>
 
     <div class="md:flex items-start">
-        <g-image :src="`/images/${$page.albumPost.image}`" />
+        <g-image :src="$page.albumPost.image" />
 
       <div class="md:mx-8 leading-normal flex-1">
         <p v-if="$page.albumPost.aside" class="mb-4 text-sm italic">
@@ -22,7 +22,7 @@
   query album ($path: String!) {
     albumPost (path: $path) {
       title
-      image
+      image (width: 225, quality: 70, fit: inside)
       aside
       name
       content
