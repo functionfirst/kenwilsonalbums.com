@@ -1,6 +1,6 @@
 <template>
   <Partial>
-    <h1 class="leading-loose font-normal">Contact</h1>
+    <h1 class="font-serif leading-loose font-normal">Contact</h1>
 
     <div class="flex">
       <div class="max-w-xs leading-normal">

@@ -1,6 +1,6 @@
 <template>
   <Partial>
-    <h1 class="leading-loose font-normal">Upcoming Gigs</h1>
+    <h1 class="font-serif leading-loose font-normal">Upcoming Gigs</h1>
 
     <Gigs />
   </Partial>

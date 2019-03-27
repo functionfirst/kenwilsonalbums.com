@@ -1,7 +1,7 @@
 <template>
   <Partial>
     <div class="leading-normal">
-      <h1 class="leading-loose font-normal">Commissions</h1>
+      <h1 class="font-serif leading-loose font-normal">Commissions</h1>
 
       <div class="max-w-sm">
         <p class="my-2">Yes I'm very happy to take on your commissions and have availability to do so</p>

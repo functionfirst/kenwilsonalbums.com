@@ -1,6 +1,6 @@
 <template>
   <Partial>
-    <h1 class="leading-loose font-normal">{{ $page.art.title }}</h1>
+    <h1 class="font-serif leading-loose font-normal">{{ $page.art.title }}</h1>
 
     <div class="md:flex items-start">
       <div class="flex-1 mr-12">
