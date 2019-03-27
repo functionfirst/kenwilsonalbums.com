@@ -1,10 +1,9 @@
 <template>
-  <Layout>
+  <Partial>
     <h1 class="leading-loose font-normal">Albums</h1>
 
     <Albums/>
-
-  </Layout>
+  </Partial>
 </template>
 
 <script>

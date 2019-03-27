@@ -1,5 +1,5 @@
 <template>
-  <Layout>
+  <Partial>
     <h1 class="leading-loose font-normal">About Ken Wilson</h1>
 
     <div class="md:flex" v-for="(item, index) in About.items" :key="index">
@@ -16,7 +16,8 @@
             </p>
         </div>
     </div>
-  </Layout>
+    </div>
+  </Partial>
 </template>
 
 <script>

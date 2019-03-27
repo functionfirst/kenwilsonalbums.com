@@ -1,5 +1,5 @@
 <template>
-  <Layout>
+  <Partial>
     <h1 class="leading-loose font-normal">{{ $page.albumPost.title }}</h1>
 
     <div class="md:flex items-start">
@@ -15,7 +15,7 @@
 
       <paypal-button :item="$page.albumPost" />
     </div>
-  </Layout>
+  </Partial>
 </template>
 
 <page-query>

@@ -1,5 +1,5 @@
 <template>
-  <Layout>
+  <Partial>
     <div class="leading-normal">
       <h1 class="leading-loose font-normal">Commissions</h1>
 
@@ -27,7 +27,7 @@
         </p>
       </div>
     </div>
-  </Layout>
+  </Partial>
 </template>
 
 <script>
