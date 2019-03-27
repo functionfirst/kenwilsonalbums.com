@@ -18,12 +18,7 @@
         <p class="my-2">To commission you're own piece of art </p>
 
         <p class="my-2">
-            <g-link
-              to="/contact/"
-              class="text-darker no-underline border border-darker rounded-full py-2 px-6 uppercase text-md inline-block hover:bg-darker hover:text-lighter"
-            >
-            Get in touch
-            </g-link>
+          <g-link to="/contact/" class="btn">Get in touch</g-link>
         </p>
       </div>
     </div>
