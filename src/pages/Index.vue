@@ -2,9 +2,8 @@
   <Layout>
     <div class="flex">
       <News class="w-2/3" />
-      <div class="w-1/3 bg-light rounded p-4 shadow-lg ml-8">
-        <h2 class="text-darker font-thin">Upcoming Gigs</h2>
-
+      <div class="w-1/3">
+        <LatestGigs/>
       </div>
     </div>
   </Layout>
@@ -12,10 +11,12 @@
 
 <script>
 import News from '~/components/News.vue';
+import LatestGigs from '~/components/LatestGigs.vue'
 
 export default {
   components: { 
-    News
+    News,
+    LatestGigs
   },
   metaInfo: {
     title: 'Ken Wilson Folk Singer and Artist'

@@ -69,7 +69,7 @@
             <textarea name="message" class="border border-dark py-2 px-3 rounded w-full h-24" v-model="formData.message"></textarea>
           </div>
 
-          <button type="submit" class="mt-8 inline-block border border-dark text-dark antialiased font-bold text-sm px-8 py-3 no-underline rounded-full">Send Message</button>
+          <button type="submit" class="btn hover:border-dark hover:text-dark">Send Message</button>
         </form>
       </div>
     </div>
