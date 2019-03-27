@@ -22,7 +22,7 @@
           id
           title
           content
-          image
+          image (width: 400, height: 300, quality: 70, fit: cover)
           date (format: "dddd, Do MMMM YYYY")
         }
       }

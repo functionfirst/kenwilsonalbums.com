@@ -21,7 +21,7 @@ query Art {
       node {
         id
         slug
-        image
+        image (width: 265, height: 265, quality: 60, fit: cover)
         title
         path
       }

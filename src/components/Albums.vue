@@ -30,7 +30,7 @@ query Albums {
         id
         slug
         aside
-        image
+        image (width: 225, quality: 70, fit: inside)
         title
         path
         content

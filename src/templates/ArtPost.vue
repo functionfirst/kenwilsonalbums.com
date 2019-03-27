@@ -20,7 +20,7 @@ query ArtPost ($path: String!) {
   art: artPost (path: $path) {
     title
     content
-    image
+    image (width: 560, quality: 70, fit: inside)
   }
 }
 </page-query>
