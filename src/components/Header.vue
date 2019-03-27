@@ -1,8 +1,8 @@
 <template>
-  <header class="flex items-center max-w-2xl mx-auto justify-between w-full">
-      <g-link to="/" class="no-underline p-4 text-lighter flex flex-col hover:text-dark">
-        <span class="font-bold text-xl">Ken Wilson</span>
-        <span class="mt-1 font-serif text-sm text-dark">Folk Music &amp; Art</span>
+  <header class="flex items-center py-8 max-w-2xl mx-auto justify-between w-full">
+      <g-link to="/" class="no-underline p-4 hover:opacity-75">
+        <span class="text-lighter text-xl">Ken Wilson</span>
+        <div class="mt-1 font-serif text-sm text-dark">Folk Music &amp; Art</div>
       </g-link>
 
       <Nav/>

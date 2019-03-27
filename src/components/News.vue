@@ -1,23 +1,32 @@
 <template>
-  <ul>
-    <li v-for="{ node } in $static.allNewsPost.edges" :key="node.id">
-      <g-link :to="node.path">
-        <h6 v-html="node.title"/>
-      </g-link>
-      <span v-html="node.date"/>
-    </li>
-  </ul>
+  <div>
+    <h2 class="font-thin text-dark mb-4 pb-4">Latest News</h2>
+
+    <div class="flex -mx-8">
+      <div v-for="{ node } in $static.allNewsPost.edges" :key="node.id" class="px-8 flex-1">
+        <g-image :src="node.image" />
+
+        <h2 class="text-light font-thin text-4xl">{{ node.title }}</h2>
+
+        
+        <div class="text-dark text-sm my-2">{{ node.date }}</div>
+
+        <div class="text-base leading-normal" v-html="node.content"/>
+      </div>
+    </div>
+  </div>
 </template>
 
 <static-query>
   query News {
-    allNewsPost(sortBy: "DESC") {
+    allNewsPost(sortBy: "date", order: DESC, perPage: 2) {
       edges {
         node {
           id
           title
-          date (format: "YYYY")
-          path
+          content
+          image (width: 400, height: 300, quality: 70, fit: cover)
+          date (format: "dddd, Do MMMM YYYY")
         }
       }
     }

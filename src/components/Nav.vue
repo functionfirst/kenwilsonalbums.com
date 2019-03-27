@@ -29,7 +29,7 @@ export default {
         url: '/contact',
         title: 'Contact'
       }],
-      linkCss: 'py-4 px-6 block text-lighter no-underline hover:text-dark'
+      linkCss: 'rounded p-2 block text-base no-underline hover:text-lighter no-underline ml-4 md:ml-8 hover:underline'
     }
   }
 }

@@ -1,14 +1,14 @@
 <template>
   <div class="flex flex-wrap items-stretch">
     <div class="flex items-start w-1/4 mb-2" v-for="({ node }) in $static.allArtPost.edges" :key="node.id">
-      <g-link :to="node.slug" class="hover:opacity-75 relative m-2 flex flex-col hover:bg-base no-underline">
+      <g-link :to="node.slug" class="hover:opacity-75 relative m-2 flex flex-col border border-base p-2 hover:border-dark no-underline">
         <div class="flex-1">
           <g-image :src="node.image" :alt="`Image of ${node.title}`" />
         </div>
 
-        <p class="text-sm absolute p-2 opacity-75 pin-b pin-l pin-r bg-darker text-lighter text-center">
+        <h3 class="text-sm leading-normal">
           {{ node.title }}
-        </p>
+        </h3>
       </g-link>
     </div>
   </div>
@@ -24,7 +24,6 @@ query Art {
         image (width: 265, height: 265, quality: 60, fit: cover)
         title
         path
-        content
       }
     }
   }
