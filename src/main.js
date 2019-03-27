@@ -6,5 +6,5 @@ export default function (Vue, { head }) {
   Vue.component('Layout', DefaultLayout)
   Vue.component('Partial', PartialLayout)
 
-  head.bodyAttrs = { class: 'bg-darker font-sans' }
+  head.bodyAttrs = { class: 'font-sans' }
 }
