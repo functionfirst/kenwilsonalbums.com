@@ -4,6 +4,7 @@ backend:
   repo: functionfirst/kenwilsonalbums.com
 
 media_folder: "src/assets/images/uploads"
+public_folder: "/assets/static"
 
 collections:
   - name: "news"
