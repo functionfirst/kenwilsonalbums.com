@@ -8,7 +8,7 @@
         You can either return to the previous page, visit my homepage or select a new page from the list above.
       </p>
 
-      <g-link to="/" class="mt-4 inline-block border border-dark text-dark antialiased font-bold text-sm px-8 py-3 no-underline rounded-full hover:text-lighter hover:border-lighter">
+      <g-link to="/" class="btn border-lighter text-lighter hover:border-dark">
       Back to home
       </g-link>
     </div>
