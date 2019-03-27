@@ -16,7 +16,7 @@ collections:
       - { label: "Date", name: "date", widget: "date" }
       - { label: "Url", name: "slug", widget: "string" }
       - { label: "Content", name: "body", widget: "markdown" }
-      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Image", name: "image", widget: "image", required: false }
 
   - name: "albums"
     label: "Albums"
@@ -28,7 +28,7 @@ collections:
       - { label: "Aside", name: "aside", widget: "string" }
       - { label: "Link", name: "slug", widget: "string" }
       - { label: "Content", name: "body", widget: "markdown" }
-      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Image", name: "image", widget: "image", required: false }
       - { label: "Paypal Name", name: "paypal_name", widget: "string" }
       - { label: "Paypal Code", name: "paypal_code", widget: "string" }
 
@@ -42,7 +42,7 @@ collections:
       - { label: "Url", name: "slug", widget: "string" }
       - { label: "Tags", name: "tags", widget: "string" }
       - { label: "Content", name: "body", widget: "markdown" }
-      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Image", name: "image", widget: "image", required: false }
       - { label: "Date", name: "date", widget: "date" }
 
   - name: "gigs"
