@@ -22,7 +22,7 @@
   query album ($path: String!) {
     albumPost (path: $path) {
       title
-      image (width: 225, quality: 70, fit: inside)
+      image
       aside
       content
     }
