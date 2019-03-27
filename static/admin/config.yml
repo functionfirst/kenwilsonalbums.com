@@ -3,8 +3,8 @@ backend:
   branch: master
   repo: functionfirst/kenwilsonalbums.com
 
-media_folder: "static/images"
-public_folder: "static/images"
+media_folder: "static/images/uploads"
+public_folder: "/images/uploads"
 
 collections:
   - name: "news"
@@ -13,10 +13,10 @@ collections:
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - { label: "title", name: "title", widget: "string" }
-      - { label: "date", name: "date", widget: "date" }
-      - { label: "slug", name: "slug", widget: "string" }
-      - { label: "body", name: "body", widget: "markdown" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "date" }
+      - { label: "Url", name: "slug", widget: "string" }
+      - { label: "Content", name: "body", widget: "markdown" }
       - { label: "Image", name: "image", widget: "image" }
 
   - name: "albums"
@@ -27,9 +27,24 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Aside", name: "aside", widget: "string" }
-      - { label: "Link", name: "url", widget: "string" }
-      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Link", name: "slug", widget: "string" }
+      - { label: "Content", name: "body", widget: "markdown" }
       - { label: "Image", name: "image", widget: "image" }
+      - { label: "Paypal Name", name: "paypal_name", widget: "string" }
+      - { label: "Paypal Code", name: "paypal_code", widget: "string" }
+
+  - name: "art"
+    label: "Art"
+    folder: "art"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Url", name: "slug", widget: "string" }
+      - { label: "Tags", name: "tags", widget: "string" }
+      - { label: "Content", name: "body", widget: "markdown" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Date", name: "date", widget: "date" }
 
   - name: "gigs"
     label: "Gigs"

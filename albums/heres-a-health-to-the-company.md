@@ -3,8 +3,8 @@ title: Here's a Health to the Company
 slug: heres-a-health-to-the-company
 aside: Recorded at Shoebox Studios, Newcastle.
 image: ./images/heres_a_health.jpg
-name: Here's a Health to the Company - Album - CD
-code: KWIL-003
+paypal_name: Here's a Health to the Company - Album - CD
+paypal_code: KWIL-003
 ---
 Jim MacFarland is a Derryman and is one of Ireland's finest traditional singers.
 He is also known for his collection of songs from the Irish source singers.

@@ -3,8 +3,8 @@ title: Not Before Time
 slug: not-before-time
 aside: Recorded at Shoebox Studios, Newcastle.
 image: ./images/notbeforetime.jpg
-name: Not Before Time - Album - CD
-code: KWIL-001
+paypal_name: Not Before Time - Album - CD
+paypal_code: KWIL-001
 ---
 This album is a collection of songs, some of which I have been singing for the past
 33 years and others I have collected along the way. As a young lad back in the seventies,

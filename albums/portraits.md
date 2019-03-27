@@ -3,8 +3,8 @@ title: Portraits
 slug: portraits
 aside: Recorded at Shoebox Studios, Newcastle.
 image: ./images/portraits.jpg
-name: Portraits - Album - CD
-code: KWIL-002
+paypal_name: Portraits - Album - CD
+paypal_code: KWIL-002
 ---
 This my second 'solo' album is again a mix of Traditional and contemory songs! I have
 dedicated the album to my three grandsons Alex, Ethan and Jack, in the hope that one
