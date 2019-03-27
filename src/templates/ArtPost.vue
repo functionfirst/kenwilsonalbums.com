@@ -4,7 +4,7 @@
 
     <div class="md:flex items-start">
       <div class="flex-1 mr-12">
-        <g-image :src="$page.art.image" :alt="`Image of ${$page.art.title}`" />
+        <g-image :src="$page.art.image" width="560" :alt="`Image of ${$page.art.title}`" />
         <div class="content" v-html="$page.art.content"></div>
       </div>
 
