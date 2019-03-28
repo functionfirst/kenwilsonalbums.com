@@ -3,8 +3,8 @@ backend:
   branch: master
   repo: functionfirst/kenwilsonalbums.com
 
-media_folder: "src/assets/images/uploads"
-public_folder: "/assets/static"
+media_folder: "assets/images"
+public_folder: "/assets/images"
 
 collections:
   - name: "news"

@@ -24,6 +24,7 @@ module.exports = {
 		{
 			use: '@gridsome/source-filesystem',
 			options: {
+				resolveAbsolutePaths: true,
 				path: 'News/*.md',
 				typeName: 'NewsPost',
 				route: '/News/:slug'
@@ -32,6 +33,7 @@ module.exports = {
 		{
 			use: '@gridsome/source-filesystem',
 			options: {
+				resolveAbsolutePaths: true,
 				path: 'albums/*.md',
 				typeName: 'AlbumPost',
 				route: '/albums/:slug'
@@ -40,6 +42,7 @@ module.exports = {
 		{
 			use: '@gridsome/source-filesystem',
 			options: {
+				resolveAbsolutePaths: true,
 				path: 'art/*.md',
 				typeName: 'ArtPost',
 				route: '/art/:slug'
@@ -48,6 +51,7 @@ module.exports = {
 		{
 			use: '@gridsome/source-filesystem',
 			options: {
+				resolveAbsolutePaths: true,
 				path: 'gigs/*.md',
 				typeName: 'GigsPost',
 				route: '/gigs/:slug'
