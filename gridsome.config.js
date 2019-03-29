@@ -27,7 +27,7 @@ module.exports = {
 				resolveAbsolutePaths: true,
 				path: 'News/*.md',
 				typeName: 'NewsPost',
-				route: '/News/:slug'
+				route: '/news/:slug'
 			}
 		},
 		{
