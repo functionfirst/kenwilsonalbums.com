@@ -14,9 +14,9 @@
       </button>
     </div>
 
-    <Nav :class="[toggleMenu ? '' : 'hidden']"/>
+    <Nav v-show="toggleMenu"/>
 
-    <a href="https://www.facebook.com/profile.php?id=100014788714532" target="_blank" :class="[toggleMenu ? '' : 'hidden']" class="py-4 px-6 flex items-center text-lighter hover:text-dark no-underline">
+    <a v-show="toggleMenu" href="https://www.facebook.com/profile.php?id=100014788714532" target="_blank" class="py-4 px-6 flex items-center text-lighter hover:text-dark no-underline">
       <div class="bg-lighter text-darker rounded-full p-2 mr-2 flex items-center justify-center">
           <facebook-icon/>
           <!-- <svg class="fill-current w-4 h-4" viewBox="0 0 13 32" height="18" width="13"><use xlink:href="#icon-facebook"></use></svg> -->
