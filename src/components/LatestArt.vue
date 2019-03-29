@@ -25,6 +25,7 @@
           id
           title
           slug
+          image (width: 300, height: 300, quality: 70, fit: cover)
         }
       }
     }
