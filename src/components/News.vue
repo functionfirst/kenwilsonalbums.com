@@ -16,13 +16,12 @@
 
 <static-query>
 query News {
-  allNewsPost(sortBy: "date", order: DESC, perPage: 2) {
+  allNewsPost(sortBy: "DESC") {
     edges {
       node {
         id
         title
         content
-        image (width: 400, height: 300, quality: 70, fit: cover)
         date (format: "dddd, Do MMMM YYYY")
       }
     }
