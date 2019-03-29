@@ -1,6 +1,6 @@
 ---
 title: Poor Sick man
-date: 2018-11-10
+date: 2018-12-09T00:00:00.000Z
 slug: poor-sick-man
 image: /assets/images/gold_badge.jpg
 ---

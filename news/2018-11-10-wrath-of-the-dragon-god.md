@@ -1,6 +1,6 @@
 ---
 title: Wrath of the dragon god
-date: 2018-11-10
+date: 2018-12-09T00:00:00.000Z
 slug: wrath-of-the-dragon-god
 image: /assets/images/gold_badge.jpg
 ---
