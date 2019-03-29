@@ -25,7 +25,7 @@ module.exports = {
 			use: '@gridsome/source-filesystem',
 			options: {
 				resolveAbsolutePaths: true,
-				path: 'News/*.md',
+				path: 'news/*.md',
 				typeName: 'NewsPost',
 				route: '/news/:slug'
 			}
