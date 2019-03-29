@@ -17,7 +17,7 @@ module.exports = {
   },
 	siteName: 'Ken Wilson Folk Singer and Artist',
 	// siteUrl: 'https://www.gridsome.org',
-	// siteDescription: 'Gridsome is a blazing-fast static site generator...',
+	siteDescription: 'Ken Wilson is a traditional folk singer and artist based in the North East of England. This is his website.',
 	titleTemplate: `%s`,
 
 	plugins: [
