@@ -6,17 +6,17 @@
         <div class="mt-1 text-sm text-dark">Folk Music &amp; Art</div>
       </g-link>
 
-      <button class="md:hidden flex items-center justify-center flex-col text-lighter p-3" @click="toggleMenu = !toggleMenu">
+      <button class="md:hidden flex items-end justify-center flex-col text-lighter p-3" @click="toggleMenu = !toggleMenu">
+        <span class="border-b-2 mb-1 w-8 border-lighter"></span>
         <span class="border-b-2 mb-1 w-6 border-lighter"></span>
-        <span class="border-b-2 mb-1 w-6 border-lighter"></span>
-        <span class="border-b-2 mb-2 w-6 border-lighter"></span>
+        <span class="border-b-2 mb-2 w-4 border-lighter"></span>
         <span class="text-sm">Menu</span>
       </button>
     </div>
 
-    <Nav v-show="toggleMenu"/>
+    <Nav :class="[toggleMenu ? '' : 'hidden']" />
 
-    <a v-show="toggleMenu" href="https://www.facebook.com/profile.php?id=100014788714532" target="_blank" class="py-4 px-6 flex items-center text-lighter hover:text-dark no-underline">
+    <a :class="[toggleMenu ? 'flex' : 'hidden']" href="https://www.facebook.com/profile.php?id=100014788714532" target="_blank" class="py-4 px-6 items-center text-lighter hover:text-dark no-underline">
       <div class="bg-lighter text-darker rounded-full p-2 mr-2 flex items-center justify-center">
           <facebook-icon/>
           <!-- <svg class="fill-current w-4 h-4" viewBox="0 0 13 32" height="18" width="13"><use xlink:href="#icon-facebook"></use></svg> -->

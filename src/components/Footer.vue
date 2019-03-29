@@ -1,5 +1,5 @@
 <template>
-  <footer class="py-12 text-lighter text-center leading-loose">
+  <footer class=" text-lighter text-sm p-4 text-center leading-loose">
 		<p>Copyright &copy; {{ year }} Ken Wilson. All rights reserved.</p>
 
 		<p>
