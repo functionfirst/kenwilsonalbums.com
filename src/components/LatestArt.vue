@@ -9,7 +9,7 @@
       class="block border p-4 bg-base rounded shadow-lg no-underline hover:opacity-75"
     >
       <div class="">
-        <g-image class="block" :src="node.image" />
+        <g-image class="block" :alt="`Image of ${node.title}`" :src="node.image" />
       </div>
 
       <h2 class="text-darker font-thin text-xl mt-2">{{ node.title }}</h2>

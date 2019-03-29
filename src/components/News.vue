@@ -2,7 +2,7 @@
   <div>
     <div class="flex flex-wrap -mx-8">
       <div v-for="({ node }) in $static.allNewsPost.edges" :key="node.id" class="md:w-1/2 px-8">
-        <g-image :src="node.image" class="rounded shadow-lg block w-full" />
+        <g-image :src="node.image" :alt="`Image for ${node.title}`" class="rounded shadow-lg block w-full" />
 
         <h2 class="text-light font-thin text-4xl mt-2">{{ node.title }}</h2>
         
