@@ -2,7 +2,6 @@
 title: Portraits
 slug: portraits
 aside: Recorded at Shoebox Studios, Newcastle.
-image: ./images/portraits.jpg
 paypal_name: Portraits - Album - CD
 paypal_code: KWIL-002
 ---

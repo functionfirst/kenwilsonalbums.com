@@ -1,7 +1,6 @@
 ---
 title: Ken
 slug: ken
-image: ./images/ken.jpg
 tags: portrait
 date: 2019-01-01
 ---
