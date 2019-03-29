@@ -1,6 +1,6 @@
 ---
 title: Two more for 2018
-date: 2018-12-09
+date: 2018-12-09T00:00:00.000Z
 slug: two-more-for-2018
 image: /assets/images/gold_badge.jpg
 ---
