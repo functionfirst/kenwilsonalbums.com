@@ -22,6 +22,7 @@ query News {
         id
         title
         content
+        image (width: 400, height: 300, quality: 70, fit: cover)
         date (format: "dddd, Do MMMM YYYY")
       }
     }
