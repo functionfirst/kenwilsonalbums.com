@@ -20,19 +20,19 @@
       <GigCard
       :key="node.id"
       :url="node.url"
-      class="flex border-b border-base p-4 justify-between"
+      class="md:flex block border-b border-base p-4 justify-between"
     >
       <div>
         <span class="font-bold">{{ node.title }}</span>
         <span class="font-thin" v-if="node.location">, {{ node.location }}</span>
       </div>
 
-      <div v-if="node.dateEnd">
+      <div class="mt-2 md:m-0" v-if="node.dateEnd">
         {{ format(node.dateStart, 'dddd, Do') }}
         to
         {{ format(node.dateEnd, 'dddd, Do MMMM')}}
       </div>
-      <div v-else>
+      <div class="mt-2 md:m-0" v-else>
         {{ format(node.dateStart, 'dddd, Do MMMM') }}
       </div>
     </GigCard>

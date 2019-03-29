@@ -2,8 +2,8 @@
   <Partial>
     <h1 class="font-serif leading-loose font-normal">Contact</h1>
 
-    <div class="flex">
-      <div class="max-w-xs leading-normal">
+    <div class="md:flex">
+      <div class="md:max-w-xs leading-normal">
         <p>
           Ken Wilson continues to perform throughout Britain and beyond.
           If you would like Ken to appear at one of your events please use the contact details below.
@@ -34,7 +34,7 @@
         </p>
       </div>
 
-      <div class="ml-24 w-1/3">
+      <div class="md:ml-24 md:w-1/3">
         <p class="mb-2 leading-normal">
           Use the contact form below to send Ken a message.
         </p>

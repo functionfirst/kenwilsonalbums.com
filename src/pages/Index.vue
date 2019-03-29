@@ -1,11 +1,11 @@
 <template>
   <Layout>
-    <div class="flex">
-      <div class="w-2/3">
+    <div class="md:flex">
+      <div class="md:w-2/3">
         <Welcome />
         <News />
       </div>
-      <div class="w-1/3">
+      <div class="md:w-1/3">
         <LatestArt/>
         <LatestGigs/>
       </div>

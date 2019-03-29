@@ -1,5 +1,5 @@
 <template>
-  <div class="ml-12">
+  <div class="md:ml-12">
     <h2 class="font-serif font-thin text-dark mb-4 pb-4">Upcoming Gigs</h2>
 
     <div class="mb-8" v-for="{ node } in $static.allGigsPost.edges" :key="node.id">

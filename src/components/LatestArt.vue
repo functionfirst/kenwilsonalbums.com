@@ -1,5 +1,5 @@
 <template>
-  <div class="ml-12 mb-8">
+  <div class="md:ml-12 mb-8">
     <!-- <h2 class="font-thin text-dark mb-4 pb-4">Latest Art</h2> -->
 
     <g-link
