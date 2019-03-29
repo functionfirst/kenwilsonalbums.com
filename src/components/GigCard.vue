@@ -1,5 +1,5 @@
 <template>
-  <a :href="url" v-if="url" target="_blank" class="hover:bg-light hover:text-darker">
+  <a :href="url" v-if="url" target="_blank" rel="noreferrer" class="hover:bg-light hover:text-darker">
     <slot />
   </a>
   <div v-else>

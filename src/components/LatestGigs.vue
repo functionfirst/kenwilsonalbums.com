@@ -4,7 +4,7 @@
 
     <div class="mb-8" v-for="{ node } in $static.allGigsPost.edges" :key="node.id">
       <div class="text-dark text-sm mb-1">{{ format(node.dateStart, 'ddd, Do MMMM YYYY') }}</div>
-      <a v-if="node.url" :href="node.url" target="_blank" class="block text-light ">
+      <a v-if="node.url" :href="node.url" rel="noreferrer" target="_blank" class="block text-light ">
         <h2 class="font-thin text-2xl">{{ node.title }}</h2>
       </a>
       <h2 v-else class="text-light font-thin text-2xl">{{ node.title }}</h2>
