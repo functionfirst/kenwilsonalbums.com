@@ -2,6 +2,7 @@
 title: Wrath of the dragon god
 date: 2018-11-10
 slug: wrath-of-the-dragon-god
+image: /assets/images/gold_badge.jpg
 ---
 
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.liquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.

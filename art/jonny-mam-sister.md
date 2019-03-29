@@ -1,6 +1,7 @@
 ---
 title: Jonny, Mam & Sister
 slug: jonny-mam-sister
+image: /assets/images/jonny-mam-sister.jpg
 tags: commission
 date: 2019-01-01
 ---

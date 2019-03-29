@@ -2,6 +2,7 @@
 title: Not Before Time
 slug: not-before-time
 aside: Recorded at Shoebox Studios, Newcastle.
+image: /assets/images/notbeforetime.jpg
 paypal_name: Not Before Time - Album - CD
 paypal_code: KWIL-001
 ---
