@@ -1,7 +1,7 @@
 ---
 title: Mandy & Mia
 slug: mandy-mia
-image: /assets/images/mandy-mia.jpg
+image: /images/mandy-mia.jpg
 tags: commission
 date: 2019-01-01
 ---

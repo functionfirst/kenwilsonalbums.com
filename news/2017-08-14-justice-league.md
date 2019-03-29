@@ -2,7 +2,7 @@
 title: Justice League
 date: 2018-12-09T00:00:00.000Z
 slug: justice-league
-image: /assets/images/gold_badge.jpg
+image: /images/gold_badge.jpg
 ---
 
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.

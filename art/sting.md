@@ -1,7 +1,7 @@
 ---
 title: Sting
 slug: sting
-image: /assets/images/sting.jpg
+image: /images/sting.jpg
 tags: portrait
 date: 2019-01-01
 ---
