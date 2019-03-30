@@ -2,7 +2,7 @@
   <Layout>
     <div class="md:flex -mx-4">
       <div class="md:w-1/3 px-4">
-        <News />
+        <LatestNews />
       </div>
       <div class="md:w-1/3 px-4">
         <LatestGigs/>
@@ -15,13 +15,13 @@
 </template>
 
 <script>
-import News from '~/components/News.vue';
+import LatestNews from '~/components/LatestNews.vue';
 import LatestGigs from '~/components/LatestGigs.vue'
 import LatestArt from '~/components/LatestArt.vue'
 
 export default {
-  components: { 
-    News,
+  components: {
+    LatestNews,
     LatestGigs,
     LatestArt
   },

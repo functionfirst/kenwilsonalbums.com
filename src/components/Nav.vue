@@ -11,6 +11,9 @@ export default {
   data () {
     return {
       links: [{
+        url: '/news/',
+        title: 'News'
+      },{
         url: '/about/',
         title: 'About'
       },{
