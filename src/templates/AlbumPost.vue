@@ -12,16 +12,14 @@
 
         <div class="content" v-html="$page.albumPost.content"></div>
 
-        
-      <h3>Reviews</h3>
-      <p>
-        Add a review here
-      </p>
+        <template v-if="$page.albumPost.reviews">
+          <h3 class="font-thin text-2xl">Album Reviews</h3>
+
+          <div class="content" v-html="$page.albumPost.reviews"></div>
+        </template>
       </div>
 
       <paypal-button :item="$page.albumPost" />
-
-      
     </div>
   </Layout>
 </template>
@@ -33,6 +31,7 @@
       aside
       image (width: 225, quality: 70, fit: inside)
       content
+      reviews
     }
   }
 </page-query>
