@@ -11,9 +11,9 @@
       <g-image class="block" :alt="`Image of ${node.title}`" :src="node.image" />
 
       <div class="absolute text-lighter pin-b pin-x p-3 bg-darker opacity-75">
-        <h2 class="font-thin text-xl mt-2">{{ node.title }}</h2>
+        <h2 class="font-thin text-xl">{{ node.title }}</h2>
 
-        <div class="content" v-html="node.content"></div>
+        <div class="mt-1 text-sm" v-html="node.content"></div>
       </div>
     </g-link>
   </div>
