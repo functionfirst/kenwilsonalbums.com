@@ -14,7 +14,7 @@
 
       <h2 class="text-darker font-thin text-xl mt-2">{{ node.title }}</h2>
 
-      <div class="content" v-html="$page.art.content"></div>
+      <div class="content" v-html="node.content"></div>
     </g-link>
   </div>
 </template>
