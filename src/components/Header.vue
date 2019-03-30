@@ -2,8 +2,8 @@
   <header class="md:flex items-center md:py-8 max-w-2xl mx-auto justify-between w-full">
     <div class="flex justify-between">
       <g-link to="/" class="no-underline p-4 block hover:opacity-75">
-        <span class="font-serif text-lighter text-2xl">Ken Wilson</span>
-        <div class="mt-1 text-sm text-dark">Folk Music &amp; Art</div>
+        <span class="font-serif text-lighter text-5xl">Ken Wilson</span>
+        <div class="mt-1 text-lg text-dark">Folk Singer &amp; Artist</div>
       </g-link>
 
       <button class="md:hidden flex items-end justify-center flex-col text-lighter p-3" @click="toggleMenu = !toggleMenu">

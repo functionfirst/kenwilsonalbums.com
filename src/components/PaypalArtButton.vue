@@ -2,7 +2,12 @@
   <div class="flex flex-col self-start rounded bg-base mt-4 p-4 shadow-inner">
     <h2 class="leading-normal text-sm font-normal mb-1">Order a print or canvas:</h2>
 
+    <p class="text-xs mb-2">
+      Please note: Canvas sizes are approximate as each frame is custom built to fit the picture.
+    </p>
+
     <PosterDropdown @change="change" />
+
 
     <h3 class="flex" v-if="price !== 0">
       <span class="font-thin text-sm self-start mr-2">Price: </span>
@@ -87,7 +92,7 @@ export default {
 
       this.loading = true;
 
-      window.location.href = this.paypalUrl;
+      // window.location.href = this.paypalUrl;
     }
   },
   data() {

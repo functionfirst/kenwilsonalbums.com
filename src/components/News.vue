@@ -4,11 +4,11 @@
       <div v-for="({ node }) in $static.allNewsPost.edges" :key="node.id" class="md:w-1/2 px-8">
         <g-image :src="node.image" :alt="`Image for ${node.title}`" class="rounded shadow-lg block w-full" />
 
-        <h2 class="text-light font-thin text-4xl mt-2">{{ node.title }}</h2>
+        <h2 class="text-darker font-thin text-4xl mt-2">{{ node.title }}</h2>
         
-        <div class="text-dark text-sm my-4">{{ node.date }}</div>
+        <div class="text-darker text-sm my-4">{{ node.date }}</div>
 
-        <div class="text-base leading-normal" v-html="node.content"/>
+        <div class="text-darker leading-normal" v-html="node.content"/>
       </div>
     </div>
   </div>
@@ -16,7 +16,7 @@
 
 <static-query>
 query News {
-  allNewsPost(sortBy: "DESC") {
+  allNewsPost(sortBy: "date", order: DESC, perPage: 1) {
     edges {
       node {
         id

@@ -2,12 +2,13 @@
   <Layout>
     <div class="md:flex">
       <div class="md:w-2/3">
-        <Welcome />
         <News />
       </div>
       <div class="md:w-1/3">
-        <LatestArt/>
         <LatestGigs/>
+      </div>
+      <div class="md:w-1/3">
+        <LatestArt/>
       </div>
     </div>
   </Layout>
@@ -15,7 +16,6 @@
 
 <script>
 import News from '~/components/News.vue';
-import Welcome from '~/components/Welcome.vue';
 import LatestGigs from '~/components/LatestGigs.vue'
 import LatestArt from '~/components/LatestArt.vue'
 
@@ -23,8 +23,7 @@ export default {
   components: { 
     News,
     LatestGigs,
-    LatestArt,
-    Welcome
+    LatestArt
   },
   metaInfo: {
     title: 'Ken Wilson Folk Singer and Artist'

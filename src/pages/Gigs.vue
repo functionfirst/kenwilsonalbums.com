@@ -1,9 +1,9 @@
 <template>
-  <Partial>
+  <Layout>
     <h1 class="font-serif leading-loose font-normal">Upcoming Gigs</h1>
 
     <Gigs />
-  </Partial>
+  </Layout>
 </template>
 
 <script>

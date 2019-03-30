@@ -1,5 +1,5 @@
 <template>
-  <Partial>
+  <Layout>
     <h1 class="font-serif leading-loose font-normal">About Ken Wilson</h1>
 
     <div class="md:flex" v-for="(item, index) in About.items" :key="index">
@@ -15,7 +15,7 @@
         <p class="leading-normal my-4 max-w-sm markup" v-html="item.description"></p>
       </div>
     </div>
-  </Partial>
+  </Layout>
 </template>
 
 <script>

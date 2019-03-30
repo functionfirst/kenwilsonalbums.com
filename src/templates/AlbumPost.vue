@@ -1,5 +1,5 @@
 <template>
-  <Partial>
+  <Layout>
     <h1 class="leading-loose font-normal">{{ $page.albumPost.title }}</h1>
 
     <div class="md:flex items-start">
@@ -11,11 +11,19 @@
         </p>
 
         <div class="content" v-html="$page.albumPost.content"></div>
+
+        
+      <h3>Reviews</h3>
+      <p>
+        Add a review here
+      </p>
       </div>
 
       <paypal-button :item="$page.albumPost" />
+
+      
     </div>
-  </Partial>
+  </Layout>
 </template>
 
 <page-query>

@@ -1,5 +1,5 @@
 <template>
-  <Partial>
+  <Layout>
     <h1 class="font-serif leading-loose font-normal">Contact</h1>
 
     <div class="md:flex">
@@ -73,7 +73,7 @@
         </form>
       </div>
     </div>
-  </Partial>
+  </Layout>
 </template>
 
 <script>

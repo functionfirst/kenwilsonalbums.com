@@ -1,9 +1,9 @@
 <template>
-  <Partial>
+  <Layout>
     <h1 class="font-serif leading-loose font-normal">Art</h1>
 
     <Art/>
-  </Partial>
+  </Layout>
 </template>
 
 <script>
