@@ -1,16 +1,16 @@
 <template>
   <div>
-    <div class="flex flex-wrap -mx-8">
-      <div v-for="({ node }) in $static.allNewsPost.edges" :key="node.id" class="md:w-1/2 px-8">
-        <g-image :src="node.image" :alt="`Image for ${node.title}`" class="rounded shadow-lg block w-full" />
+    <div v-for="({ node }) in $static.allNewsPost.edges" :key="node.id">
+      <g-image :src="node.image" :alt="`Image for ${node.title}`" class="rounded shadow-lg block w-full" />
 
-        <h2 class="text-darker font-thin text-4xl mt-2">{{ node.title }}</h2>
-        
-        <div class="text-darker text-sm my-4">{{ node.date }}</div>
+      <h2 class="text-darker font-thin text-4xl mt-2">{{ node.title }}</h2>
+      
+      <div class="text-darker text-sm my-4">{{ node.date }}</div>
 
-        <div class="text-darker leading-normal" v-html="node.content"/>
-      </div>
+      <div class="text-darker leading-normal" v-html="node.content"/>
     </div>
+
+    <g-link to="/news" class="btn mt-4 border-darker text-darker hover:border-dark">Read all News...</g-link>
   </div>
 </template>
 
