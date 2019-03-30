@@ -6,11 +6,11 @@
       :to="`art/${node.slug}`"
       v-for="{ node } in $static.allArtPost.edges"
       :key="node.id"
-      class="block relative rounded shadow-lg no-underline hover:opacity-75"
+      class="block relative no-underline hover:opacity-75"
     >
-      <g-image class="block" :alt="`Image of ${node.title}`" :src="node.image" />
+      <g-image class="rounded shadow-lg block w-full" :alt="`Image of ${node.title}`" :src="node.image" />
 
-      <div class="absolute text-lighter pin-b pin-x p-3 bg-darker opacity-75">
+      <div class="absolute rounded-b text-lighter pin-b pin-x p-3 bg-darker opacity-75">
         <h2 class="font-thin text-xl">{{ node.title }}</h2>
 
         <div class="mt-1 text-sm" v-html="node.content"></div>
