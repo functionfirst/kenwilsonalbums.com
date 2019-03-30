@@ -35,7 +35,7 @@
       </div>
 
       <div class="md:ml-24 md:w-1/3">
-        <p class="mb-2 leading-normal">
+        <p class="mt-4 md:mt-0 mb-2 leading-normal">
           Use the contact form below to send Ken a message.
         </p>
 
@@ -69,7 +69,7 @@
             <textarea name="message" class="border border-dark py-2 px-3 rounded w-full h-24" v-model="formData.message"></textarea>
           </div>
 
-          <button type="submit" class="btn hover:border-dark hover:text-dark">Send Message</button>
+          <button type="submit" class="mt-4 btn hover:border-dark hover:text-dark">Send Message</button>
         </form>
       </div>
     </div>
