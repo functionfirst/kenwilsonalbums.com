@@ -15,7 +15,7 @@
       <div class="text-darker leading-normal" v-html="node.content"/>
     </g-link>
 
-    <g-link to="/news" class="btn mt-4 border-darker text-darker hover:border-dark">Read all News...</g-link>
+    <g-link to="/news/" class="btn mt-4 border-darker text-darker hover:border-dark">Read all News...</g-link>
   </div>
 </template>
 

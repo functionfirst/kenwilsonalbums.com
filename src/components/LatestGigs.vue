@@ -10,7 +10,7 @@
       <h2 v-else class="text-darker font-thin text-2xl">{{ node.title }}</h2>
     </div>
 
-    <g-link to="/gigs" class="btn border-darker text-darker hover:border-dark">See all Gigs...</g-link>
+    <g-link to="/gigs/" class="btn border-darker text-darker hover:border-dark">See all Gigs...</g-link>
   </div>
 </template>
 
