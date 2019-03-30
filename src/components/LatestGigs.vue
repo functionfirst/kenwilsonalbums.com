@@ -2,7 +2,7 @@
   <div>
     <h2 class="font-serif font-thin mb-4 pb-4">Upcoming Gigs</h2>
 
-    <div v-for="{ node } in $static.allGigsPost.edges" :key="node.id">
+    <div class="mb-8" v-for="{ node } in $static.allGigsPost.edges" :key="node.id">
       <div class="text-darker text-sm mb-1">{{ format(node.dateStart, 'ddd, Do MMMM YYYY') }}</div>
       <a v-if="node.url" :href="node.url" rel="noreferrer" target="_blank" class="block text-darker ">
         <h2 class="font-thin text-2xl">{{ node.title }}</h2>
@@ -10,7 +10,7 @@
       <h2 v-else class="text-darker font-thin text-2xl">{{ node.title }}</h2>
     </div>
 
-    <g-link to="/gigs" class="btn mt-4 border-darker text-darker hover:border-dark">See all Gigs...</g-link>
+    <g-link to="/gigs" class="btn border-darker text-darker hover:border-dark">See all Gigs...</g-link>
   </div>
 </template>
 
