@@ -54,8 +54,8 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Location", name: "locaiton", widget: "location" }
-      - { label: "URL", name: "url", widget: "url", required: false }
+      - { label: "Location", name: "location", widget: "string" }
+      - { label: "URL", name: "url", widget: "string", required: false }
       - { label: "Start Date", name: "date_start", widget: "date" }
       - { label: "End Date", name: "date_start", widget: "date", required: false }
       - label: "Type"
@@ -64,14 +64,3 @@ collections:
         options:
           - { label: "Ken Wilson", value: "solo" }
           - { label: "Wilson Family", value: "wilson" }
-
-  - name: "data"
-    label: "Data"
-    files:
-      - name: "about"
-        label: "About"
-        file: "src/data/About.yml"
-        fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Description", name: "description", widget: "text" }
-     
