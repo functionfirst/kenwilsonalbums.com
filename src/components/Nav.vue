@@ -32,7 +32,7 @@ export default {
         url: '/contact',
         title: 'Contact'
       }],
-      linkCss: 'md:rounded md:border-none p-3 border-b border-dark block text-base no-underline hover:text-lighter no-underline md:ml-4 md:ml-8 hover:underline'
+      linkCss: 'py-4 px-6 block text-lighter no-underline hover:text-dark'
     }
   }
 }
