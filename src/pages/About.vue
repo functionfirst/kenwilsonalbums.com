@@ -11,24 +11,27 @@
           {{ item.title }}
         </h2>
       </div>
-      <div>
+      <div class="md:mr-8">
         <p class="leading-normal my-4 max-w-sm markup" v-html="item.description"></p>
+      </div>
+      <div class="mt-4">
+        <g-image :src="item.image" alt="Image of Ken" />
       </div>
     </div>
   </Layout>
 </template>
 
 <script>
-import About from '~/data/About.yml'
+import About from "~/data/About.yml";
 
 export default {
-    computed: {
+  computed: {
     About() {
-        return About
+      return About;
     }
-    },
+  },
   metaInfo: {
-    title: 'About Ken Wilson'
+    title: "About Ken Wilson"
   }
-}
+};
 </script>

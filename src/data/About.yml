@@ -1,6 +1,7 @@
 title: About
 items:
   - title: Music
+    image: ./assets/images/about_ken.jpg
     description:
       Born in Billingham Teesside in nineteen sixty, one of eight siblings, five brothers and three sisters.
       Sadly our sister Josephine died in infancy. I attended school in Billingham, where I developed a passion
@@ -27,6 +28,7 @@ items:
       <a href="/albums/portraits">"Portraits"</a> which has been well received, with great reviews.
   
   - title: Artwork
+    image: ./assets/images/about_ken2.jpg
     description:
       In 2012 I began to have health problems, which resulted in me having a pacemaker fitted in 2013.
       However, my health continued to deteriorate, resulting in my having to  spend some time on sick leave 
