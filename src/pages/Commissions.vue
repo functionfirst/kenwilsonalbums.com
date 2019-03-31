@@ -20,6 +20,8 @@
           <ul class="my-2">
             <li>Anniversaries</li>
             <li>Family members</li>
+            <li>Loved Ones</li>
+            <li>Pets, etc</li>
           </ul>
 
           <p class="my-4">
