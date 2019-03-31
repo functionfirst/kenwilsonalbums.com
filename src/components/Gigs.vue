@@ -18,22 +18,26 @@
       </template>
 
       <GigCard
-      :key="node.id"
-      :url="node.url"
-      class="md:flex block border-b border-base p-4 justify-between"
-    >
+        :key="node.id"
+        :url="node.url"
+        class="md:flex block border-b border-base p-4 justify-between items-center"
+      >
       <div>
         <span class="font-bold">{{ node.title }}</span>
         <span class="font-thin" v-if="node.location">, {{ node.location }}</span>
       </div>
 
-      <div class="mt-2 md:m-0" v-if="node.dateEnd">
+      <div class="mt-2 md:m-0 text-right" v-if="node.dateEnd">
         {{ format(node.dateStart, 'dddd, Do') }}
         to
-        {{ format(node.dateEnd, 'dddd, Do MMMM')}}
+        {{ format(node.dateEnd, 'dddd, Do MMMM')}}<br>
+
+        <GigType :type="node.type" />
       </div>
-      <div class="mt-2 md:m-0" v-else>
-        {{ format(node.dateStart, 'dddd, Do MMMM') }}
+      <div class="mt-2 md:m-0 text-right" v-else>
+        {{ format(node.dateStart, 'dddd, Do MMMM') }}<br>
+
+        <GigType :type="node.type" />
       </div>
     </GigCard>
     </template>
@@ -43,10 +47,12 @@
 <script>
 import { format } from 'date-fns'
 import GigCard from '~/components/GigCard'
+import GigType from '~/components/GigType'
 
 export default {
   components: {
-    GigCard
+    GigCard,
+    GigType
   },
   methods: {
     format(d, str) {
@@ -70,6 +76,7 @@ export default {
           title
           dateStart
           dateEnd
+          type
           url
         }
       }
