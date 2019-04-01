@@ -15,9 +15,9 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Date", name: "date", widget: "date" }
-      - { label: "Url", name: "slug", widget: "string" }
+      - { label: "Page Name", name: "slug", widget: "string" }
       - { label: "Content", name: "body", widget: "markdown" }
-      - { label: "Image", name: "image", widget: "image", required: false }
+      - { label: "Image", name: "image", widget: "image" }
 
   - name: "albums"
     label: "Albums"
@@ -27,9 +27,9 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Aside", name: "aside", widget: "string" }
-      - { label: "Link", name: "slug", widget: "string" }
+      - { label: "Page Name", name: "slug", widget: "string" }
       - { label: "Content", name: "body", widget: "markdown" }
-      - { label: "Image", name: "image", widget: "image", required: false }
+      - { label: "Image", name: "image", widget: "image" }
       - { label: "Paypal Name", name: "paypal_name", widget: "string" }
       - { label: "Paypal Code", name: "paypal_code", widget: "string" }
       - { label: "Reviews", name: "reviews", widget: "markdown", default: "There are no reviews" }
@@ -41,10 +41,10 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Url", name: "slug", widget: "string" }
+      - { label: "Page Name", name: "slug", widget: "string" }
       - { label: "Tags", name: "tags", widget: "string" }
       - { label: "Content", name: "body", widget: "markdown" }
-      - { label: "Image", name: "image", widget: "image", required: false }
+      - { label: "Image", name: "image", widget: "image" }
       - { label: "Date", name: "date", widget: "date" }
 
   - name: "gigs"
@@ -55,7 +55,7 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Location", name: "location", widget: "string" }
-      - { label: "URL", name: "url", widget: "string", required: false }
+      - { label: "Link to Website", name: "url", widget: "string", required: false }
       - { label: "Start Date", name: "date_start", widget: "date" }
       - { label: "End Date", name: "date_start", widget: "date", required: false }
       - label: "Type"
