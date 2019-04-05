@@ -118,9 +118,6 @@ export default {
       return `£${val}`;
     },
     buy() {
-      // prevent double post
-      if (this.loading) return;
-
       // Validate price
       if (!this.price) {
         this.error = "Please select a size and print";
@@ -133,14 +130,11 @@ export default {
         return;
       }
 
-      this.loading = true;
-
-      // window.location.href = this.paypalUrl;
+      window.location.href = this.paypalUrl;
     }
   },
   data() {
     return {
-      loading: false,
       error: false,
       currencyCode: "GBP",
       business: "wilsonfamily@ntlworld.com",
