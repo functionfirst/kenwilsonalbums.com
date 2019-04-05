@@ -133,9 +133,7 @@ export default {
         return;
       }
 
-      // this.loading = true;
-
-      console.log(this.paypalUrl);
+      this.loading = true;
 
       // window.location.href = this.paypalUrl;
     }

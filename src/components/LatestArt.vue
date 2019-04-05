@@ -20,8 +20,12 @@
 </template>
 
 <static-query>
-  query Art {
-    allArtPost(sortBy: "date", order: DESC, perPage: 1) {
+  query {
+    allArtPost(
+      filter: {
+        homepage: { eq: true }
+      }
+    ) {
       edges {
         node {
           id
