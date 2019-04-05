@@ -1,5 +1,5 @@
 ---
-title: Appearing at the Baccapipes Folk Club
+title: Baccapipes Folk Club
 date: 2019-03-31T19:54:08.853Z
 slug: 'HomePage [baccapipes.folkpitch.co.uk]'
 image: /images/untitled-2417.jpg
