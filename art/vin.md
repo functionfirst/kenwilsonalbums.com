@@ -1,9 +1,9 @@
 ---
-title: Vin Garbutt
+title: Vin
 slug: vin
-image: /images/vin.jpg
+tags: portraits
 homepage: false
-tags: portrait
-date: 2019-01-02T00:00:00.000Z
+image: /images/vin.jpg
+date: 2019-04-05T18:53:37.674Z
 ---
 Picture of Vin Garbutt
