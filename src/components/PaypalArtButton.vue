@@ -105,8 +105,6 @@ export default {
       this.price = selection.price;
       this.name = `${this.item.title} ${selection.name}`;
       this.type = selection.type;
-
-      console.log(this.name);
     },
     updateShipping(value, index) {
       this.shipping = value;
@@ -145,10 +143,12 @@ export default {
     };
   },
   watch: {
-    price() {
+    type() {
       this.shipping = null;
-      // this.selection = null;
       this.shippingSelected = null;
+      this.error = null;
+    },
+    price() {
       this.error = null;
     },
     shipping() {
