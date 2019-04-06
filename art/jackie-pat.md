@@ -1,6 +1,6 @@
 ---
-title: Jackie & Pat
-slug: jackie & pat
+title: Sisters
+slug: sisters
 tags: portraits
 homepage: false
 image: /images/j-p.png
