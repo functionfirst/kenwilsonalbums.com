@@ -3,7 +3,7 @@ title: Johnny
 slug: johnny
 tags: portraits
 homepage: false
-image: /images/johnny-handle-print-copy.brown-1.png
-date: 2019-04-06T12:32:38.541Z
+image: /images/johnny-print-copy.png
+date: 2019-04-06T13:14:21.922Z
 ---
-Picture of Johnny Handle
+Picture of Johnny Collins
