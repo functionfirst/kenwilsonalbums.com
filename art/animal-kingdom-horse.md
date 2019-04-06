@@ -1,9 +1,9 @@
 ---
 title: Animal Kingdom 'Horse'
-slug: animal kingdom  horse
+slug: animalkingdomhorse
 tags: animals
 homepage: false
 image: /images/horse-play.png
-date: 2019-04-06T17:19:42.714Z
+date: 2019-04-06T17:54:29.597Z
 ---
 Picture of a Horse
