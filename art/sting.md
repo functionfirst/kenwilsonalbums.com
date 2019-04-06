@@ -1,9 +1,9 @@
 ---
 title: Sting
 slug: sting
-tags: portrait
-image: /images/sting.jpg
-homepage: true
-date: 2019-03-30T00:00:00.000Z
+tags: portraits
+homepage: false
+image: /images/sting.png
+date: 2019-04-06T11:29:08.518Z
 ---
-Picture of Sting
+Earlier Picture of Sting
