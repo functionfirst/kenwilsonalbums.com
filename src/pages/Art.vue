@@ -2,16 +2,54 @@
   <Layout>
     <h1 class="font-serif leading-loose font-normal">Art</h1>
 
-    <Art/>
+    <div class="flex justify-between mb-4 items-center">
+      <art-filter />
+
+      <div class="flex items-center">
+        <span v-if="$page.allArtPost.pageInfo.totalPages > 1" class="text-sm">Select a page:</span>
+        <Pager
+          :info="$page.allArtPost.pageInfo"
+          :show-navigation="false"
+          active-link-class="font-bold border-darker"
+          link-class="border border-dark ml-1 py-2 px-3 no-underline hover:border-darker hover:text-darker"
+          class="ml-2 pagination"
+        />
+      </div>
+    </div>
+
+    <Art :items="$page.allArtPost.edges" />
   </Layout>
 </template>
 
+<page-query>
+query Art ($page: Int) {
+  allArtPost(perPage: 12, page: $page, sortBy: "date", order: DESC) @paginate {
+    pageInfo {
+      totalPages,
+      currentPage
+    }
+    edges {
+      node {
+        id
+        slug
+        image (width: 265, height: 265, quality: 60, fit: cover)
+        title
+      }
+    }
+  }
+}
+</page-query>
+
 <script>
 import Art from '~/components/Art'
+import { Pager } from 'gridsome'
+import ArtFilter from '~/components/ArtFilter'
 
 export default {
   components: {
-    Art
+    Art,
+    ArtFilter,
+    Pager
   },
   metaInfo: {
     title: 'Pencil Art and Portraits by Ken Wilson'
