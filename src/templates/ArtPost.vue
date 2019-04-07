@@ -4,7 +4,10 @@
 
     <div class="md:flex items-start">
       <div class="flex-1 md:mr-12">
-        <g-image :src="$page.art.image" :alt="`Image of ${$page.art.title}`" />
+        <div class="relative">
+          <div class="absolute pin"></div>
+          <g-image :src="$page.art.image" :alt="`Image of ${$page.art.title}`" />
+        </div>
         <div class="content" v-html="$page.art.content"></div>
       </div>
 

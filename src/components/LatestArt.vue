@@ -8,7 +8,10 @@
       :key="node.id"
       class="block relative no-underline hover:opacity-75"
     >
-      <g-image class="rounded shadow-lg block w-full" :alt="`Image of ${node.title}`" :src="node.image" />
+      <div class="relative">
+        <div class="absolute pin"></div>
+        <g-image class="rounded shadow-lg block w-full" :alt="`Image of ${node.title}`" :src="node.image" />
+      </div>
 
       <div class="absolute rounded-b text-lighter pin-b pin-x p-3 bg-darker opacity-75">
         <h2 class="font-thin text-xl">{{ node.title }}</h2>
