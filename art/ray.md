@@ -1,0 +1,9 @@
+---
+title: Ray
+slug: ray
+tags: portraits
+homepage: false
+image: /images/ray-print-copy.png
+date: 2019-04-06T13:01:58.077Z
+---
+Picture of Ray Fisher

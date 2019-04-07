@@ -3,7 +3,7 @@ title: Vin
 slug: vin
 tags: portraits
 homepage: false
-image: /images/vin.jpg
-date: 2019-04-05T18:53:37.674Z
+image: /images/vg.png
+date: 2019-04-06T11:39:08.748Z
 ---
-Picture of Vin Garbutt
+Earlier picture of Vin Garbutt

@@ -1,9 +1,9 @@
 ---
 title: Lion
 slug: lion
-image: /images/lion.jpg
+tags: animals
 homepage: false
-tags: animal
-date: 2019-01-01T00:00:00.000Z
+image: /images/lion-brown.png
+date: 2019-04-05T23:00:00.000Z
 ---
-Picture of Lion
+Picture of a Lion

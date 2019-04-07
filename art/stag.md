@@ -4,6 +4,6 @@ slug: stag
 tags: animals
 homepage: false
 image: /images/stag-print-copy-brown-.png
-date: 2019-04-05T18:59:14.573Z
+date: 2019-04-06T18:03:14.286Z
 ---
 Picture of a Stag
