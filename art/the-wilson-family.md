@@ -1,6 +1,6 @@
 ---
-title: The Wilson Family
-slug: the wilson family
+title: Wilsons
+slug: wilsons
 tags: portraits
 homepage: false
 image: /images/scan_20180311-3-.png
