@@ -1,9 +1,9 @@
 ---
 title: Pete
 slug: pete
-tags: portrait
+tags: portraits
 homepage: false
-image: /images/pb.png
-date: 2019-04-06T11:58:38.245Z
+image: /images/pc.png
+date: 2019-04-02T23:00:00.000Z
 ---
-Earlier drawing of Pete Betts
+Earlier picture of Pete Coe
