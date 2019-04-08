@@ -1,6 +1,6 @@
 ---
-title: Mike & Louis
-slug: mike & louis
+title: WatersonKillen
+slug: watersonkillen
 tags: portraits
 homepage: false
 image: /images/m-l.png
