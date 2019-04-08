@@ -1,6 +1,6 @@
 ---
-title: Newport Bridge
-slug: newport bridge
+title: NewportBridge
+slug: newportbridge
 tags: portraits
 homepage: false
 image: /images/newport-bridge-print-copy-a.png
