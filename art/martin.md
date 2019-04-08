@@ -3,7 +3,7 @@ title: Martin
 slug: martin
 tags: portraits
 homepage: false
-image: /images/mc.png
-date: 2019-04-03T23:00:00.000Z
+image: /images/martin-print-copy.brown-to-canvaspng.png
+date: 2019-04-08T22:37:10.009Z
 ---
-Earlier picture of Martin Carthy
+Recent picture of Martin Carthy
