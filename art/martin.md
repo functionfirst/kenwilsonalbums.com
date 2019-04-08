@@ -1,9 +1,9 @@
 ---
 title: Martin
 slug: martin
-image: /images/martin.jpg
+tags: portraits
 homepage: false
-tags: portrait
-date: 2019-01-01
+image: /images/m-s.png
+date: 2019-04-05T23:00:00.000Z
 ---
-Picture of Martin
+Picture of Martin Simpson
