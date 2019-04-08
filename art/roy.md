@@ -3,7 +3,7 @@ title: Roy
 slug: roy
 tags: portraits
 homepage: false
-image: /images/roy-print-copy.png
-date: 2019-04-06T13:00:15.092Z
+image: /images/rb.jpg
+date: 2019-04-06T23:00:00.000Z
 ---
-Picture of Roy Harris
+Picture of Roy Bailey
