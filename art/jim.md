@@ -1,9 +1,9 @@
 ---
 title: Jim
 slug: jim
-tags: portraits
+tags: portrats
 homepage: false
-image: /images/js.png
-date: 2019-04-06T12:31:06.966Z
+image: /images/jmc.png
+date: 2019-04-06T23:00:00.000Z
 ---
-Picture of Jim Sharp
+Picture of Jim MacFarland
