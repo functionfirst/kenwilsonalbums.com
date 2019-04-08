@@ -1,6 +1,6 @@
 ---
 title: Rowleys
-slug: rowley's
+slug: rowleys
 tags: portraits
 homepage: false
 image: /images/mike-luna-agnes-print-copy.large.png
