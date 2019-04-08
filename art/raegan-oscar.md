@@ -1,6 +1,6 @@
 ---
-title: Raegan & Oscar
-slug: raegan & oscar
+title: Hedleys
+slug: hedleys
 tags: portraits
 homepage: false
 image: /images/raegan-oscar.png
