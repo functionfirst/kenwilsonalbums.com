@@ -1,7 +1,7 @@
 ---
 title: Bamford Concert
-location:
-url:
-date_start: 2020-05-01
+location: bamford
+date_start: 2020-05-16T11:18:51.605Z
 type: wilson
 ---
+
