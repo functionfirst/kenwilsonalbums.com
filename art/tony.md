@@ -3,7 +3,7 @@ title: Tony
 slug: tony
 tags: portraits
 homepage: false
-image: /images/tony-print-copy.png
-date: 2019-04-06T12:49:50.298Z
+image: /images/t-r.png
+date: 2019-04-08T20:51:17.466Z
 ---
-Picture of Tony Cutler
+Picture of Tony Rose
