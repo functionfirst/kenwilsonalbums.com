@@ -1,6 +1,6 @@
 ---
-title: Young'uns
-slug: young'uns
+title: Younguns
+slug: younguns
 tags: portraits
 homepage: false
 image: /images/scan_20180308-2-.png
