@@ -1,6 +1,6 @@
 ---
-title: Mona Lisa
-slug: mona lisa
+title: MonaLisa
+slug: monalisa
 tags: portraits
 homepage: false
 image: /images/mona-print-copy.png
