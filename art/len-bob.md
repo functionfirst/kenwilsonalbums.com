@@ -1,6 +1,6 @@
 ---
-title: Len & Bob
-slug: len & bob
+title: Berrys
+slug: berrys
 tags: portraits
 homepage: false
 image: /images/len-bob-sun.png
