@@ -1,6 +1,6 @@
 ---
-title: Mike and Louis
-slug: mike and louis
+title: MikeandLouis
+slug: mikeandlouis
 tags: portraits
 homepage: false
 image: /images/m-l.png
