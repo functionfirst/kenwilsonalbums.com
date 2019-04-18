@@ -2,7 +2,7 @@
 title: Transporter
 slug: transporter
 tags: portraits
-homepage: true
+homepage: false
 image: /images/tran2.bpng.png
 date: 2019-04-09T22:17:01.396Z
 ---
