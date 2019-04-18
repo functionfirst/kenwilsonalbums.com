@@ -4,10 +4,10 @@
       <div class="md:w-1/3 px-4">
         <LatestNews />
       </div>
-      <div class="md:w-1/3 px-4">
+      <div class="md:w-1/3 px-4 mt-12 md:mt-0">
         <LatestGigs/>
       </div>
-      <div class="md:w-1/3 px-4">
+      <div class="md:w-1/3 px-4 mt-12 md:mt-0">
         <LatestArt/>
       </div>
     </div>
