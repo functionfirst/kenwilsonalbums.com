@@ -1,5 +1,5 @@
 ---
-title: Aysgarth Falls
+title: Aysgarth
 slug: aysgarthfalls
 tags: portraits
 homepage: false
