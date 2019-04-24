@@ -1,6 +1,6 @@
 ---
 title: Aysgarth Falls
-slug: aysgarth falls
+slug: aysgarthfalls
 tags: portraits
 homepage: false
 image: /images/aysgarth-falls-brown.png
