@@ -2,8 +2,8 @@
 title: Norma
 slug: norma
 tags: portraits
-homepage: false
-image: /images/nc.jpg
-date: 2019-04-06T13:53:26.911Z
+homepage: true
+image: /images/norma-w-b.png
+date: 2019-06-05T07:39:29.938Z
 ---
-Earlier picture of Norma Carthy
+Pencil sketch of Norma Carthy
