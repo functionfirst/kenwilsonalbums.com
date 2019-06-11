@@ -2,7 +2,7 @@
 title: Eagle
 slug: eagle
 tags: animals
-homepage: true
+homepage: false
 image: /images/eagle-print.jpg
 date: 2019-05-09T15:39:22.758Z
 ---
