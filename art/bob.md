@@ -2,8 +2,8 @@
 title: Bob
 slug: bob
 tags: portraits
-homepage: false
-image: /images/bf.jpg
-date: 2019-04-06T12:37:52.272Z
+homepage: true
+image: /images/bob-print.bpng.png
+date: 2019-06-27T09:28:59.911Z
 ---
-Picture of Bob Fox
+Pencil sketch of Bob Copper
