@@ -1,6 +1,6 @@
 ---
-title: 'VoiceOfTheTees '
-slug: voice of the tees
+title: 'VoiceoftheTees '
+slug: voiceofthetees
 tags: portraits
 homepage: true
 image: /images/print-copy-111111.bpng.png
