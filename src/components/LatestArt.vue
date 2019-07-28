@@ -24,11 +24,11 @@
 
 <static-query>
   query {
-    allArtPost(
-      filter: {
-        homepage: { eq: true }
+    allArtPost(perPage: 1, filter: { homepage: { eq: true } }) @paginate {
+      pageInfo {
+        totalPages,
+        currentPage
       }
-    ) {
       edges {
         node {
           id
