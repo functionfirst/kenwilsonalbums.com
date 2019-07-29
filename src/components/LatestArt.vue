@@ -1,7 +1,5 @@
 <template>
   <div>
-    <h2 class="font-serif font-thin mb-4 pb-2">Latest Artwork</h2>
-
     <g-link
       :to="`art/${node.slug}`"
       v-for="{ node } in $static.allArtPost.edges"

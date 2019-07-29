@@ -45,7 +45,7 @@
 
     <p v-if="error" class="my-1 text-sm text-danger font-bold">{{ error }}</p>
 
-    <div class="flex my-2 justify-between border-t border-dark py-2">
+    <div class="flex my-2 justify-between py-2">
       <span class="font-thin text-lg">Total Price</span>
 
       <span class="font-bold text-lg text-right">

@@ -2,19 +2,13 @@
   <Layout>
     <h1 class="font-serif font-thin leading-loose text-6xl">Voice of the Tees</h1>
 
-    <p class="mb-4 text-lg">
-      Two icons of Teesside <em>Vin Garbutt</em> and the <em>Transporter Bridge</em>.
-    </p>
-
     <div class="flex">
-      <div class="mb-4 w-1/3">
-        <g-image
-          src="/images/voiceofthetees.jpg"
-          width="350"
-        />
-      </div>
-      <div class="leading-normal w-2/3">
-        <p class="my-4">
+      <div class="leading-normal flex-1 mr-8">
+        <p class="mb-4 text-xl font-medium">
+          Two icons of Teesside <em>Vin Garbutt</em> and the <em>Transporter Bridge</em>.
+        </p>
+
+        <p class="text-xl italic">
           I have merged two of my sketches together to create this 18 x 16 (46cm x 41cm) canvas print - <em>Voice of the Tees</em>
         </p>
 
@@ -31,15 +25,26 @@
         </p>
 
         <p class="my-4">
-          If, or hopefully when we reach the 250th copy – I will produce 1 no. Larger copy of the print with a card
+          If, or hopefully <em>when</em> we reach the 250th copy - I will produce 1 no. Larger copy of the print with a card
           of all the names of the 250 people who purchased a copy, and along with a Cheque, Pat and I will present
           it to the Cardiology Department of the James Cook Hospital.
         </p>
 
         <p class="my-4">
-          Please allow Two – Three weeks for delivery, from the day you order your copy. Thank you,<br>
-          Ken Wilson
+          Please allow Two – Three weeks for delivery, from the day you order your copy.
         </p>
+
+        <p class="my-4">
+          Thank you,<br>
+          <em>Ken Wilson</em>
+        </p>
+
+      </div>
+      <div class="w-1/2">
+        <g-image
+          src="~/images/voiceofthetees.jpg"
+          width="600"
+        />
 
         <paypal-tees-button />
       </div>

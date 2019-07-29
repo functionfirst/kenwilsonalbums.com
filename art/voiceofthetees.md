@@ -1,5 +1,5 @@
 ---
-title: 'VoiceoftheTees '
+title: 'Voice of the Tees'
 slug: voiceofthetees
 tags: portraits
 homepage: true
