@@ -9,7 +9,7 @@
     <div class="flex">
       <div class="mb-4 w-1/3">
         <g-image
-          src="/assets/static/voiceofthetees.jpg"
+          src="/images/voiceofthetees.jpg"
           width="350"
         />
       </div>
