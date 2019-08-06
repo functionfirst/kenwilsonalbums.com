@@ -9,7 +9,7 @@
     <div class="bg-white rounded mb-4">
       <div class="font-bold p-3 border-b border-base flex justify-between">
         <div class="flex-1 ml-3">
-          18" x 16" (46cm x 41cm)
+          24" x 16" (61cm x 41cm)
         </div>
         <div class="flex-1 mx-2">
           Canvas

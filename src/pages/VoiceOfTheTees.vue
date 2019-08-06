@@ -20,8 +20,8 @@
         <p class="my-4">
           Lots of you will know that Vin spent a lot of time, being looked after by our wonderful NHS nurses, doctors
           and staff, at the Cardiology Department of James Cook Hospital in Middlesbrough. Over the past couple years,
-          I have also needed the services of these wonderful people. So, again with Pats blessing I have decided to
-          donate 50% of all profits from the sale of these prints, to the <em>Cardiology Department</em> of the James Cook Hospital!
+          I have also needed the services of these wonderful people. So, again with Pats blessing I will be
+          donating 50% of all profits from the sale of these prints, to the <em>Cardiology Department</em> of the James Cook Hospital!
         </p>
 
         <p class="my-4">
