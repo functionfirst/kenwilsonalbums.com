@@ -1,6 +1,6 @@
 ---
 title: Jack & Emily
-slug: jack_and_emily
+slug: jack-and-emily
 tags: portraits
 homepage: true
 image: /images/jack-emily-dark-b.png
