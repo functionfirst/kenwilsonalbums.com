@@ -121,7 +121,7 @@ export default {
   data() {
     return {
       price: 50,
-      name: 'Voice of the Tees - Limited Edition (18 x 16)',
+      name: 'Voice of the Tees - Limited Edition (24 x 16)',
       error: false,
       currencyCode: "GBP",
       business: "wilsonfamily@ntlworld.com",
