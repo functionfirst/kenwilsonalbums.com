@@ -9,7 +9,7 @@
         </p>
 
         <p class="text-xl italic">
-          I have merged two of my sketches together to create this 18 x 16 (46cm x 41cm) canvas print - <em>Voice of the Tees</em>
+          I have merged two of my sketches together to create this 24 x 16 (61cm x 41cm) canvas print - <em>Voice of the Tees</em>
         </p>
 
         <p class="my-4">
