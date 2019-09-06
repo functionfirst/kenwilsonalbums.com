@@ -1,6 +1,6 @@
 ---
-title: Abbey
-slug: abbey
+title: Whitby Abbey
+slug: whitby-abbey
 tags: portraits
 homepage: false
 image: /images/flash-abbey.-squarejpg.jpg

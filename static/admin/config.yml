@@ -56,7 +56,6 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Location", name: "location", widget: "string" }
-      - { label: "Link to Website", name: "url", widget: "string", required: false }
       - { label: "Start Date", name: "date_start", widget: "date" }
       - { label: "End Date", name: "date_start", widget: "date", required: false }
       - label: "Type"
