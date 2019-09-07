@@ -3,7 +3,7 @@ title: Chris
 slug: chris
 tags: portraits
 homepage: false
-image: /images/chris1.jpg
-date: 2019-04-06T13:30:56.136Z
+image: /images/chris-coe.brownpng.png
+date: 2019-09-06T23:00:00.000Z
 ---
-Picture of Chris (the boss!)
+Pencil sketch of Chris Coe
