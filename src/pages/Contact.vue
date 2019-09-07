@@ -39,6 +39,13 @@
           Please use the contact form below to send Ken a message.
         </p>
 
+        <div
+          v-if="error"
+          class="bg-danger mb-2 px-3 py-2 rounded text-white"
+        >
+          {{ error }}
+        </div>
+
         <form 
           method="post"
           v-on:submit.prevent="handleSubmit"
@@ -46,7 +53,7 @@
         >
           <p hidden>
             <label>
-              Don’t fill this out: <input name="botField" />
+              Don’t fill this out: <input type="text" name="botField" v-model="formData.botField" />
             </label>
           </p>
 
@@ -127,26 +134,24 @@ export default {
     return {
       validate: false,
       formData: {},
+      error: null
     }
   },
 
   methods: {
-    // encode(data) {
-    //   return Object.keys(data)
-    //     .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
-    //     .join('&')
-    // },
-
     handleSubmit(e) {
+      this.error = null
+
       fetch('/.netlify/functions/send-email', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: {
-          ...this.formData,
-        },
+        body: JSON.stringify({
+          ...this.formData
+        }),
       })
       .then(() => this.$router.push('/success'))
-      .catch(error => alert(error))
+      .catch(error => {
+        this.error = error
+      })
     }
   }
 }
