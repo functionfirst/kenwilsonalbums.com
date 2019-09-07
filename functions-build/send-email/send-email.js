@@ -15,7 +15,7 @@ exports.handler = function(event, context, callback) {
 
   const from = 'info@shatteredscales.co.uk'
   const subject = 'Website Contact Form!'
-  const html = `<html><body>${event}<br><br>${event.body}</body></html>`
+  const html = `<html><body>${event.body}</body></html>`
 
   client.transmissions
     .send({

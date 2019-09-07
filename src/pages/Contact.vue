@@ -131,19 +131,19 @@ export default {
   },
 
   methods: {
-    encode(data) {
-      return Object.keys(data)
-        .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
-        .join('&')
-    },
+    // encode(data) {
+    //   return Object.keys(data)
+    //     .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+    //     .join('&')
+    // },
 
     handleSubmit(e) {
       fetch('/.netlify/functions/send-email', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: this.encode({
+        body: {
           ...this.formData,
-        }),
+        },
       })
       .then(() => this.$router.push('/success'))
       .catch(error => alert(error))
