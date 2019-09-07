@@ -138,7 +138,7 @@ export default {
     },
 
     handleSubmit(e) {
-      fetch('http://localhost:34567/.netlify/functions/send-email', {
+      fetch('/.netlify/functions/send-email', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: this.encode({
