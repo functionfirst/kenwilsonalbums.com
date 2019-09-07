@@ -1,11 +1,9 @@
-# Gridsome Starter NetlifyCMS
+# Ken Wilson Albums
 
-Now modify your website directly from NetlifyCMS, no need to mess around with coding. 😅
+[![Netlify Status](https://api.netlify.com/api/v1/badges/1ee391c2-372e-4882-8b01-adc00ddae802/deploy-status)](https://app.netlify.com/sites/kenwilsonalbums/deploys)
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/functionfirst/kenwilsonalbums.com)
+Static website for promoting the artistic works of Ken Wilson, both as a Folk singer, performer and artist.
 
-## Donate
+## Built using:
 
-I've put a lot of time and effort into making **Gridsome Starter NetlifyCMS** project. If you love it, you can Become a Patron. I promise it will be a good investment 😉.
-
-[![Become a Patron](https://i.imgur.com/wYOr44L.png)](https://www.patreon.com/bePatron?u=8494594)
+https://github.com/mittalyashu/gridsome-starter-netlifycms
