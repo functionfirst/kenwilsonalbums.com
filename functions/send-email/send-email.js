@@ -16,7 +16,7 @@ exports.handler = function(event, context, callback) {
     return
   }
 
-  const from = 'info@shatteredscales.co.uk'
+  const from = 'info@kenwilsonalbums.com/'
   const subject = 'Website Contact Form!'
   const html = `<html><body>
     Name: ${data.name}<br>
