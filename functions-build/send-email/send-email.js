@@ -6,24 +6,16 @@ const client = new SparkPost(process.env.SPARKPOST, {
 exports.handler = function(event, context, callback) {
   console.log(event)
   // Trap automated boy
-  if (event.body.botField !== '') {
-    callback(null, {
-      statusCode: 200,
-      body: 'Seems legit'
-    })
-  }
+  // if (event.body.botField !== '') {
+  //   callback(null, {
+  //     statusCode: 200,
+  //     body: 'Seems legit'
+  //   })
+  // }
 
   const from = 'info@shatteredscales.co.uk'
   const subject = 'Website Contact Form!'
-  // const html = '<html><body><p>Testing by Alan</p></body></html>'
-
-  const html = `
-    Name: ${event.body.name}<br>
-    Email: ${event.body.email}<br>
-    Telephone: ${event.body.telephone}<br>
-    Content:<br><br>
-    ${event.body.message}
-  `
+  const html = `<html><body>${event}<br><br>${event.body}</body></html>`
 
   client.transmissions
     .send({
