@@ -101,7 +101,12 @@
             <span class="hidden invalid mt-1 text-xs">Message is required</span>
           </div>
 
-          <button type="submit" class="mt-4 btn hover:border-dark hover:text-dark">Send Message</button>
+          <button
+            type="submit"
+            class="mt-4 btn hover:border-dark hover:text-dark"
+            :class="loading ? 'pointer-events-none opacity-75' : ''"
+            :disabled="loading"
+          >Send Message</button>
         </form>
       </div>
     </div>
@@ -132,6 +137,7 @@ export default {
 
   data() {
     return {
+      loading: false,
       validate: false,
       formData: {},
       error: null
@@ -140,7 +146,10 @@ export default {
 
   methods: {
     handleSubmit(e) {
+      if (this.loading) return
       this.error = null
+
+      this.loading = true
 
       fetch('/.netlify/functions/send-email', {
         method: 'POST',
@@ -151,6 +160,8 @@ export default {
       .then(() => this.$router.push('/success'))
       .catch(error => {
         this.error = error
+      }).finally(() => {
+        this.loading = false
       })
     }
   }
