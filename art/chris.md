@@ -2,8 +2,8 @@
 title: Chris
 slug: chris
 tags: portraits
-homepage: false
-image: /images/chris-coe.brownpng.png
-date: 2019-09-06T23:00:00.000Z
+homepage: true
+image: /images/chris-sherburn.brownpng.png
+date: 2019-09-17T20:23:26.109Z
 ---
-Pencil sketch of Chris Coe
+Pencil sketch of Chris Sherburn
