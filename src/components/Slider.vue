@@ -11,12 +11,6 @@
         class="flex w-full"
         :style="offset"
       >
-        <!-- <g-image
-          v-for="(image, index) in images"
-          :key="index"
-          :src="image"
-          :width="`${width}`"
-        /> -->
         <g-image
           class="w-full"
           src="~/images/voiceofthetees.jpg"
@@ -38,16 +32,6 @@
       >
         &larr; prev
       </button>
-<!--     
-      <div class="flex">
-        <div
-          v-for="(b, index) in images"
-          :key="index"
-          class="cursor-pointer rounded-full h-3 w-3 border border-dark m-1 hover:bg-darker hover:border-darker"
-          :class="index === selected ? 'bg-dark' : 'bg-light'"
-          @click="selected = index"
-        />
-      </div> -->
 
       <button
         class="flex-1 text-right p-2 group flex justify-end hover:text-dark"
