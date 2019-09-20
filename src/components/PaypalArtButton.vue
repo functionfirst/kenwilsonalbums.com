@@ -6,7 +6,10 @@
       Please note: Canvas sizes are approximate as each frame is custom built to fit the picture.
     </p>
 
-    <PosterDropdown @change="changeProduct" />
+    <PosterDropdown
+      :posters="posters"
+      @change="changeProduct"
+    />
 
     <template v-if="price">
       <h2 class="leading-normal text-lg font-normal mb-1">
@@ -94,12 +97,20 @@ export default {
       return this.type === "Poster" ? PosterPostage : CanvasPostage;
     }
   },
+
   props: {
+    posters: {
+      default: () => [],
+      required: true,
+      type: Array
+    },
+
     item: {
       type: Object,
       required: true
     }
   },
+
   methods: {
     changeProduct(selection) {
       this.price = selection.price;

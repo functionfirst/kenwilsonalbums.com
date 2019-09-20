@@ -12,7 +12,10 @@
       </div>
 
       <div class="md:w-1/3">
-        <paypal-art-button :item="$page.art" />
+        <paypal-art-button
+          :posters="posters"
+          :item="$page.art"
+        />
       </div>
     </div>
   </Layout>
@@ -35,6 +38,42 @@ export default {
   components: {
     PaypalArtButton
   },
+
+  data () {
+    return {
+      posters: [
+        {
+          name: 'Poster A4 12in x 8in',
+          size: "A4",
+          dimensions: '12" x 8"',
+          type: "Poster",
+          price: 15
+        },
+        {
+          name: 'Poster A3 16in x 12in',
+          size: "A3",
+          dimensions: '16" x 12"',
+          type: "Poster",
+          price: 25
+        },
+        {
+          name: 'Canvas A3 16in x 12in',
+          size: "A3",
+          dimensions: '16" x 12"',
+          type: "Canvas",
+          price: 50
+        },
+        {
+          name: 'Canvas A2 30in x 20in',
+          size: "A2",
+          dimensions: '30" x 20"',
+          type: "Canvas",
+          price: 85
+        }
+      ]
+    }
+  },
+
   metaInfo () {
     return {
       title: this.$page.art.title

@@ -1,6 +1,6 @@
 <template>
   <div class="bg-white rounded shadow-md mb-4">
-    <div v-for="(option, index) in options"
+    <div v-for="(option, index) in posters"
     :key="index"
     :class="[selected === index ? 'font-bold' :  '']"
     class="p-3 cursor-pointer border-b border-base hover:bg-light flex justify-between"
@@ -24,7 +24,7 @@
 export default {
   computed: {
     current() {
-      return this.options[this.selected];
+      return this.posters[this.selected];
     },
     price() {
       return this.current.price;
@@ -38,45 +38,25 @@ export default {
       }
     }
   },
+
+  props: {
+    posters: {
+      default: false,
+      required: true,
+      type: Array
+    }
+  },
+
   methods: {
     selectProduct(index) {
       this.selected = index;
       this.$emit('change', this.product);
     }
   },
+
   data() {
     return {
-      selected: null,
-      options: [
-        {
-          name: 'Poster A4 12in x 8in',
-          size: "A4",
-          dimensions: '12" x 8"',
-          type: "Poster",
-          price: 15
-        },
-        {
-          name: 'Poster A3 16in x 12in',
-          size: "A3",
-          dimensions: '16" x 12"',
-          type: "Poster",
-          price: 25
-        },
-        {
-          name: 'Canvas A3 16in x 12in',
-          size: "A3",
-          dimensions: '16" x 12"',
-          type: "Canvas",
-          price: 50
-        },
-        {
-          name: 'Canvas A2 30in x 20in',
-          size: "A2",
-          dimensions: '30" x 20"',
-          type: "Canvas",
-          price: 85
-        }
-      ]
+      selected: null
     };
   }
 };

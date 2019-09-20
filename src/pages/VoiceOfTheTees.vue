@@ -45,19 +45,51 @@
           src="~/images/voiceofthetees.jpg"
           width="600"
         />
+        <g-image
+          src="~/images/voiceofthetees_framed.jpg"
+          width="600"
+        />
 
-        <paypal-tees-button />
+        <paypal-art-button
+          :posters="posters"
+          :item="item"
+        />
       </div>
     </div>
   </Layout>
 </template>
 
 <script>
-import PaypalTeesButton from '~/components/PaypalTeesButton'
+import PaypalArtButton from '~/components/PaypalArtButton'
 
 export default {
   components: {
-    PaypalTeesButton
+    PaypalArtButton
+  },
+
+  data () {
+    return {
+      item: {
+        "title": "Voice of the Tees"
+      },
+
+      posters: [
+        {
+          name: 'Canvas 24" x 16"',
+          size: "Custom",
+          dimensions: '24" x 16" (61cm x 41cm)',
+          type: "Canvas",
+          price: 50
+        },
+        {
+          name: 'Framed 24" x 16"',
+          size: "Custom",
+          dimensions: '24" x 16" (61cm x 41cm)',
+          type: "Framed",
+          price: 50
+        }
+      ]
+    }
   }
 }
 </script>
