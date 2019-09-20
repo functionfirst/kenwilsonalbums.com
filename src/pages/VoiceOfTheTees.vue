@@ -41,14 +41,7 @@
 
       </div>
       <div class="w-1/2">
-        <g-image
-          src="~/images/voiceofthetees.jpg"
-          width="600"
-        />
-        <g-image
-          src="~/images/voiceofthetees_framed.jpg"
-          width="600"
-        />
+        <slider :images="images" />
 
         <paypal-art-button
           :posters="posters"
@@ -61,10 +54,12 @@
 
 <script>
 import PaypalArtButton from '~/components/PaypalArtButton'
+import Slider from '~/components/Slider'
 
 export default {
   components: {
-    PaypalArtButton
+    PaypalArtButton,
+    Slider
   },
 
   data () {
@@ -72,6 +67,11 @@ export default {
       item: {
         "title": "Voice of the Tees"
       },
+
+      images: [
+        "~/images/voiceofthetees.jpg",
+        "~/images/voiceofthetees_framed.jpg"
+      ],
 
       posters: [
         {

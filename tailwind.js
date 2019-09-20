@@ -840,26 +840,26 @@ module.exports = {
     negativeMargin: ['responsive'],
     objectFit: false,
     objectPosition: false,
-    opacity: ['responsive', 'hover'],
+    opacity: ['responsive', 'hover', 'group-hover'],
     outline: ['focus'],
     overflow: ['responsive'],
     padding: ['responsive'],
-    pointerEvents: ['responsive'],
+    pointerEvents: [], // ['responsive'],
     position: ['responsive'],
-    resize: ['responsive'],
+    resize: false, // ['responsive'],
     shadows: ['responsive', 'hover', 'focus'],
-    svgFill: [],
-    svgStroke: [],
-    tableLayout: ['responsive'],
+    svgFill: false, // [],
+    svgStroke: false, // [],
+    tableLayout: false, // ['responsive'],
     textAlign: ['responsive'],
     textColors: ['responsive', 'hover', 'focus'],
     textSizes: ['responsive'],
     textStyle: ['responsive', 'hover', 'focus'],
-    tracking: ['responsive'],
-    userSelect: ['responsive'],
-    verticalAlign: ['responsive'],
+    tracking: false, //['responsive'],
+    userSelect: false, // ['responsive'],
+    verticalAlign: false, //['responsive'],
     visibility: ['responsive'],
-    whitespace: ['responsive'],
+    whitespace: false, // ['responsive'],
     width: ['responsive'],
     zIndex: ['responsive'],
   },
@@ -879,12 +879,12 @@ module.exports = {
   |
   */
 
-  plugins: [
-    require('tailwindcss/plugins/container')({
-      // center: true,
-      // padding: '1rem',
-    }),
-  ],
+  // plugins: [
+  //   require('tailwindcss/plugins/container')({
+  //     // center: true,
+  //     // padding: '1rem',
+  //   }),
+  // ],
 
 
   /*
