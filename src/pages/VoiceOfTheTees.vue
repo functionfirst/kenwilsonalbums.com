@@ -75,17 +75,17 @@ export default {
 
       posters: [
         {
-          name: 'Canvas 24" x 16"',
+          name: 'Canvas 24in x 16in',
           size: "Custom",
-          dimensions: '24" x 16" (61cm x 41cm)',
+          dimensions: '24in x 16in',
           type: "Canvas",
           price: 50
         },
         {
-          name: 'Framed 24" x 16"',
-          size: "Custom",
-          dimensions: '24" x 16" (61cm x 41cm)',
-          type: "Framed",
+          name: 'Poster A3 16in x 12in',
+          size: "A3",
+          dimensions: '16in x 12in',
+          type: "Poster",
           price: 50
         }
       ]
