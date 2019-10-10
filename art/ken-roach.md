@@ -1,6 +1,6 @@
 ---
-title: 'Ken Roach '
-slug: ken roach
+title: 'Ken Loach '
+slug: ken loach
 tags: portraits
 homepage: true
 image: /images/ken-loach.bpng.png
