@@ -3,7 +3,7 @@ title: Watersons
 slug: watersons
 tags: portraits
 homepage: false
-image: /images/watos-1.b-png.png
-date: 2019-06-07T17:29:52.212Z
+image: /images/watresons-framed.brownpng.jpg
+date: 2019-10-15T15:23:36.755Z
 ---
-A collection of pencil sketches the Watersons
+Pencil sketches of the Watersons Martin Norma Lal and Mike
