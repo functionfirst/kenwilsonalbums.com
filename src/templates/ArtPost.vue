@@ -57,6 +57,20 @@ export default {
           price: 25
         },
         {
+          name: 'Framed A4 12in x 8in',
+          size: "A4",
+          dimensions: '12" x 8"',
+          type: "Framed (Black)",
+          price: 25
+        },
+        {
+          name: 'Framed A3 16in x 12in',
+          size: "A3",
+          dimensions: '16" x 12"',
+          type: "Framed (Black)",
+          price: 35
+        },
+        {
           name: 'Canvas A3 16in x 12in',
           size: "A3",
           dimensions: '16" x 12"',
