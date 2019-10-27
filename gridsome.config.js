@@ -5,7 +5,7 @@ const postcssPlugins = [
   tailwind('./tailwind.js'),
 ]
 
-// if (process.env.NODE_ENV === 'production') postcssPlugins.push(purgecss())
+if (process.env.NODE_ENV === 'production') postcssPlugins.push(purgecss())
 
 module.exports = {
 	css: {
