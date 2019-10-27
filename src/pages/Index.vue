@@ -10,12 +10,13 @@
       <div class="md:w-2/5 px-4 mt-12 md:mt-0">
         <router-link
           to="voice-of-the-tees"
-          class="block relative no-underline hover:opacity-75 rounded overflow-hidden shadow-lg"
+          class="block relative no-underline hover:opacity-75 rounded overflow-hidden shadow-lg mb-24"
         >
           
           <g-image
             src="~/images/voiceofthetees.jpg"
             width="350"
+            alt="Drawing of Vin Garbutt interposed with the Tees Transporter Bridge"
             class="block w-full"
           />
           <div class="rounded-b text-lighter p-3 bg-darker opacity-75">
@@ -28,14 +29,6 @@
             </p>
           </div>
         </router-link>
-
-        <br>
-
-        <br>
-        <br>
-        <br>
-        <br>
-
 
         <LatestArt/>
       </div>
