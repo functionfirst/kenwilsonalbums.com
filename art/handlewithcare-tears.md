@@ -1,6 +1,6 @@
 ---
-title: 'HandleWithCare(Tears) '
-slug: handlewithcare(tears)
+title: 'HandleWithCareTears '
+slug: handlewithcaretears
 tags: portraits
 homepage: true
 image: /images/handle-with-care-tears-.png
