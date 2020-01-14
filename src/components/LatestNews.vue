@@ -24,7 +24,7 @@
     <g-link
       to="/news/"
       class="btn mt-4 border-darker text-darker hover:border-dark"
-    >Read all News...</g-link>
+    >Read all News &rarr;</g-link>
   </div>
 </template>
 

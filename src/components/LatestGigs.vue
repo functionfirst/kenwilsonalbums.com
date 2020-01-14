@@ -16,7 +16,7 @@
       <h2 v-else class="text-lg">{{ node.title }}</h2>
     </div>
 
-    <g-link to="/gigs/" class="btn border-darker text-darker hover:border-dark">See all Gigs...</g-link>
+    <g-link to="/gigs/" class="btn border-darker text-darker hover:border-dark">See all Gigs &rarr;</g-link>
   </div>
 </template>
 
