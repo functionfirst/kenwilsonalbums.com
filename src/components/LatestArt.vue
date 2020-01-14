@@ -1,27 +1,22 @@
 <template>
   <div>
-    <h2 class="font-thin border-b mb-4 pb-4">Latest Art</h2>
+    <h2 class="font-thin border-b pb-4">Latest Art</h2>
 
     <g-link
       :to="`art/${node.slug}`"
       v-for="{ node } in $static.allArtPost.edges"
       :key="node.id"
-      class="block relative no-underline hover:opacity-75"
+      class="block no-underline"
     >
-      <div class="relative">
-        <div class="absolute pin"></div>
-        <g-image
-          class="rounded shadow-lg block w-full"
-          :alt="`Image of ${node.title}`"
-          :src="node.image"
-        />
-      </div>
+      <g-image
+        class="rounded shadow-lg block w-full"
+        :alt="`Image of ${node.title}`"
+        :src="node.image"
+      />
 
-      <div class="absolute rounded-b text-lighter pin-b pin-x p-3 bg-darker opacity-75">
-        <h2 class="font-thin text-xl">{{ node.title }}</h2>
+      <h2 class="text-lg">{{ node.title }}</h2>
 
-        <div class="mt-1 text-sm" v-html="node.content"></div>
-      </div>
+      <div class="mt-1 text-sm" v-html="node.content"></div>
     </g-link>
   </div>
 </template>
