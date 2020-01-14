@@ -1,5 +1,7 @@
 <template>
   <div>
+    <h2 class="font-thin border-b mb-4 pb-4">Latest Art</h2>
+
     <g-link
       :to="`art/${node.slug}`"
       v-for="{ node } in $static.allArtPost.edges"
@@ -8,7 +10,11 @@
     >
       <div class="relative">
         <div class="absolute pin"></div>
-        <g-image class="rounded shadow-lg block w-full" :alt="`Image of ${node.title}`" :src="node.image" />
+        <g-image
+          class="rounded shadow-lg block w-full"
+          :alt="`Image of ${node.title}`"
+          :src="node.image"
+        />
       </div>
 
       <div class="absolute rounded-b text-lighter pin-b pin-x p-3 bg-darker opacity-75">
