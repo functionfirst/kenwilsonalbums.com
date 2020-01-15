@@ -1,7 +1,5 @@
 <template>
   <div>
-    <h2 class="font-thin border-b mb-4 pb-4">Upcoming Gigs</h2>
-
     <div class="mb-6" v-for="{ node } in $static.allGigsPost.edges" :key="node.id">
       <div class="text-darker text-sm mb-1">{{ format(node.dateStart, 'ddd, Do MMMM YYYY') }}</div>
       <a

@@ -1,8 +1,6 @@
 <template>
-  <div class="mb-8">
-    <h2 class="font-thin border-b mb-4 pb-4">Voice of the Tees</h2>
-
-    <router-link to="voice-of-the-tees" class="block rounded overflow-hidden mb-4 shadow-lg">
+  <div>
+    <router-link to="voice-of-the-tees" class="block mb-4">
       <g-image
         src="~/images/voiceofthetees.jpg"
         width="350"

@@ -1,14 +1,8 @@
 <template>
   <div>
-    <h2 class="font-thin border-b mb-4 pb-4">Latest Art</h2>
-
     <div v-for="{ node } in $static.allArtPost.edges" :key="node.id">
       <g-link :to="`art/${node.slug}`" class="block no-underline mb-4">
-        <g-image
-          class="rounded shadow-lg block w-full"
-          :alt="`Image of ${node.title}`"
-          :src="node.image"
-        />
+        <g-image class="block w-full" :alt="`Image of ${node.title}`" :src="node.image" />
       </g-link>
 
       <h2 class="text-lg">{{ node.title }}</h2>

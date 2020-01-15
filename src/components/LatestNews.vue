@@ -1,18 +1,12 @@
 <template>
   <div>
-    <h2 class="font-thin border-b mb-4 pb-4">Latest News</h2>
-
     <g-link
       :to="node.path"
       class="no-underline block hover:opacity-75"
       v-for="({ node }) in $static.allNewsPost.edges"
       :key="node.id"
     >
-      <g-image
-        :src="node.image"
-        :alt="`Image for ${node.title}`"
-        class="rounded shadow-lg block w-full"
-      />
+      <g-image :src="node.image" :alt="`Image for ${node.title}`" class="block w-full" />
 
       <h2 class="text-darker font-thin text-4xl mt-2">{{ node.title }}</h2>
 
