@@ -6,12 +6,12 @@
           <LatestNews />
         </Card>
       </div>
-      <div class="md:w-1/3 px-4">
+      <div class="md:w-1/3 mt-8 md:mt-0 px-4">
         <Card title="Latest Gigs">
           <LatestGigs />
         </Card>
       </div>
-      <div class="flex-1 px-4 mt-4 md:mt-0">
+      <div class="flex-1 mt-8 md:mt-0 px-4">
         <Card title="Voice of the Tees">
           <VoiceOfTheTees />
         </Card>
@@ -19,13 +19,13 @@
     </div>
 
     <div class="md:flex -mx-4 mt-8">
-      <div class="w-2/3 px-4">
+      <div class="md:w-2/3 px-4">
         <Card title="About Ken Wilson">
           <Intro />
         </Card>
       </div>
 
-      <div class="flex-1 px-4">
+      <div class="flex-1 px-4 mt-8 md:mt-0">
         <Card title="Latest Art">
           <LatestArt />
         </Card>
