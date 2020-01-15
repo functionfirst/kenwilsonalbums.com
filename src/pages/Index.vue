@@ -2,12 +2,12 @@
   <Layout>
     <div class="md:flex -mx-4">
       <div class="md:w-1/3 px-4">
-        <Card title="Latest News">
+        <Card title="Latest News" class="h-full">
           <LatestNews />
         </Card>
       </div>
       <div class="md:w-1/3 mt-8 md:mt-0 px-4">
-        <Card title="Latest Gigs">
+        <Card title="Latest Gigs" class="h-full">
           <LatestGigs />
         </Card>
       </div>
@@ -15,22 +15,16 @@
         <Card title="Voice of the Tees">
           <VoiceOfTheTees />
         </Card>
-      </div>
-    </div>
 
-    <div class="md:flex -mx-4 mt-8">
-      <div class="md:w-2/3 px-4">
-        <Card title="About Ken Wilson">
-          <Intro />
-        </Card>
-      </div>
-
-      <div class="flex-1 px-4 mt-8 md:mt-0">
-        <Card title="Latest Art">
+        <Card title="Latest Art" class="mt-8">
           <LatestArt />
         </Card>
       </div>
     </div>
+
+    <Card title="About Ken Wilson" class="mt-8">
+      <Intro />
+    </Card>
   </Layout>
 </template>
 
