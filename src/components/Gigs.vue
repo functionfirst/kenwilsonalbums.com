@@ -3,18 +3,16 @@
     <template v-for="({ node }, index) in $static.gigs.edges">
       <h2
         class="leading-loose font-thin"
-        v-if="index === 0" :key="`title${node.id}`"
-      >
-        {{ format(node.dateStart, 'YYYY') }}
-      </h2>
+        v-if="index === 0"
+        :key="`title${node.id}`"
+      >{{ format(node.date_start, 'YYYY') }}</h2>
 
       <template v-if="$static.gigs.edges[index - 1]">
         <h2
-          v-if="format($static.gigs.edges[index - 1].node.dateStart, 'YYYY') !== format(node.dateStart, 'YYYY')"
-          class="leading-loose font-thin" :key="`title${node.id}`"
-        >
-          {{ format(node.dateStart, 'YYYY') }}
-        </h2>
+          v-if="format($static.gigs.edges[index - 1].node.date_start, 'YYYY') !== format(node.date_start, 'YYYY')"
+          class="leading-loose font-thin"
+          :key="`title${node.id}`"
+        >{{ format(node.date_start, 'YYYY') }}</h2>
       </template>
 
       <div
@@ -26,15 +24,17 @@
           <span class="font-thin" v-if="node.location">, {{ node.location }}</span>
         </div>
 
-        <div class="mt-2 md:m-0 text-right" v-if="node.dateEnd">
-          {{ format(node.dateStart, 'dddd, Do') }}
+        <div class="mt-2 md:m-0 text-right" v-if="node.date_end">
+          {{ format(node.date_start, 'dddd, Do') }}
           to
-          {{ format(node.dateEnd, 'dddd, Do MMMM')}}<br>
+          {{ format(node.date_end, 'dddd, Do MMMM')}}
+          <br />
 
           <GigType :type="node.type" />
         </div>
         <div class="mt-2 md:m-0 text-right" v-else>
-          {{ format(node.dateStart, 'dddd, Do MMMM') }}<br>
+          {{ format(node.date_start, 'dddd, Do MMMM') }}
+          <br />
 
           <GigType :type="node.type" />
         </div>
@@ -44,8 +44,8 @@
 </template>
 
 <script>
-import { format } from 'date-fns'
-import GigType from '~/components/GigType'
+import { format } from "date-fns";
+import GigType from "~/components/GigType";
 
 export default {
   components: {
@@ -56,19 +56,19 @@ export default {
       return format(d, str);
     }
   }
-}
+};
 </script>
 
 <static-query>
   query Gigs {
-    gigs: allGigsPost(sortBy: "dateStart", order: ASC) {
+    gigs: allGigsPost(sortBy: "date_start", order: ASC) {
       edges {
         node {
           id
           location
           title
-          dateStart
-          dateEnd
+          date_start
+          date_end
           type
         }
       }
