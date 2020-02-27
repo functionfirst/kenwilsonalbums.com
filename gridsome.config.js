@@ -2,19 +2,19 @@ const purgecss = require('@fullhuman/postcss-purgecss')
 const tailwind = require('tailwindcss')
 
 const postcssPlugins = [
-  tailwind('./tailwind.js'),
+	tailwind('./tailwind.js'),
 ]
 
 if (process.env.NODE_ENV === 'production') postcssPlugins.push(purgecss())
 
 module.exports = {
 	css: {
-    loaderOptions: {
-      postcss: {
-        plugins: postcssPlugins,
-      },
-    },
-  },
+		loaderOptions: {
+			postcss: {
+				plugins: postcssPlugins,
+			},
+		},
+	},
 	siteName: 'Ken Wilson Folk Singer and Artist',
 	// siteUrl: 'https://www.gridsome.org',
 	siteDescription: 'Ken Wilson is a traditional folk singer and artist based in the North East of England. This is his website.',
@@ -54,7 +54,7 @@ module.exports = {
 				resolveAbsolutePaths: true,
 				path: 'gigs/*.md',
 				typeName: 'GigsPost',
-				route: '/gigs/:slug'
+				route: '/gigs/:title'
 			}
 		}
 	]
