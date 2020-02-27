@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="mb-6" v-for="{ node } in $static.allGigsPost.edges" :key="node.id">
-      <div class="text-darker text-sm mb-1">{{ format(node.dateStart, 'ddd, Do MMMM YYYY') }}</div>
+      <div class="text-darker text-sm mb-1">{{ format(node.date_start, 'ddd, Do MMMM YYYY') }}</div>
       <a
         v-if="node.url"
         :href="node.url"
@@ -20,12 +20,12 @@
 
 <static-query>
   query Gigs {
-    allGigsPost(sortBy: "dateStart", order: ASC, perPage: 5) {
+    allGigsPost(sortBy: "date_start", order: ASC, perPage: 5) {
       edges {
         node {
           id
           title
-          dateStart
+          date_start
         }
       }
     }
