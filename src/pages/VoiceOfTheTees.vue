@@ -2,7 +2,7 @@
   <Layout>
     <h1 class="font-serif font-thin leading-loose text-6xl">Voice of the Tees</h1>
 
-    <div class="flex">
+    <div class="md:flex">
       <div class="leading-normal flex-1 mr-8">
         <p class="mb-4 text-xl font-medium">
           Two icons of Teesside
@@ -48,7 +48,7 @@
           <em>Ken Wilson</em>
         </p>
       </div>
-      <div class="w-1/2">
+      <div class="md:w-1/2">
         <slider :images="images" />
 
         <paypal-art-button :posters="posters" :types="types" :item="item" />
