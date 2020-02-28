@@ -2,17 +2,17 @@
   <Layout>
     <h1 class="font-serif leading-loose font-normal">Art</h1>
 
-    <div class="flex justify-between mb-4 items-center">
-      <art-filter />
+    <div class="md:flex justify-between items-center">
+      <art-filter class="mb-4" />
 
-      <div class="flex items-center">
+      <div class="flex items-center justify-between">
         <span v-if="$page.allArtPost.pageInfo.totalPages > 1" class="text-sm">Select a page:</span>
         <Pager
           :info="$page.allArtPost.pageInfo"
           :show-navigation="false"
           active-link-class="font-bold border-darker"
-          link-class="border border-dark ml-1 py-2 px-3 no-underline hover:border-darker hover:text-darker"
-          class="ml-2 pagination"
+          link-class="block border border-dark ml-1 py-2 px-3 no-underline hover:border-darker hover:text-darker"
+          class="flex ml-2 pagination"
         />
       </div>
     </div>
@@ -32,7 +32,7 @@ query Art ($page: Int) {
       node {
         id
         slug
-        image (width: 265, height: 265, quality: 60, fit: cover)
+        image (width: 425, height: 425, quality: 60, fit: cover)
         title
       }
     }
@@ -41,9 +41,9 @@ query Art ($page: Int) {
 </page-query>
 
 <script>
-import Art from '~/components/Art'
-import { Pager } from 'gridsome'
-import ArtFilter from '~/components/ArtFilter'
+import Art from "~/components/Art";
+import { Pager } from "gridsome";
+import ArtFilter from "~/components/ArtFilter";
 
 export default {
   components: {
@@ -52,7 +52,7 @@ export default {
     Pager
   },
   metaInfo: {
-    title: 'Pencil Art and Portraits by Ken Wilson'
+    title: "Pencil Art and Portraits by Ken Wilson"
   }
-}
+};
 </script>
