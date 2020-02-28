@@ -7,14 +7,14 @@
 </template>
 
 <script>
-import Gigs from '~/components/Gigs'
+import Gigs from "~/components/Gigs";
 
 export default {
   components: {
     Gigs
   },
   metaInfo: {
-    title: 'Upcoming Gigs by Ken Wilson'
+    title: "Upcoming Gigs by Ken Wilson"
   }
-}
+};
 </script>

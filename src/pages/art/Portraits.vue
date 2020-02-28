@@ -41,9 +41,9 @@ query Art ($page: Int) {
 </page-query>
 
 <script>
-import Art from '~/components/Art'
-import { Pager } from 'gridsome'
-import ArtFilter from '~/components/ArtFilter'
+import Art from "~/components/Art";
+import { Pager } from "gridsome";
+import ArtFilter from "~/components/ArtFilter";
 
 export default {
   components: {
@@ -52,7 +52,7 @@ export default {
     Pager
   },
   metaInfo: {
-    title: 'Pencil Art and Portraits by Ken Wilson'
+    title: "Pencil Art and Portraits by Ken Wilson"
   }
-}
+};
 </script>

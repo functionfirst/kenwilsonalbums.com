@@ -2,19 +2,20 @@
   <Layout>
     <h1 class="leading-loose font-normal">Albums</h1>
 
-    <Albums/>
+    <Albums />
   </Layout>
 </template>
 
 <script>
-import Albums from '~/components/Albums'
+import Albums from "~/components/Albums";
 
 export default {
-  components:{
+  components: {
     Albums
   },
+
   metaInfo: {
-    title: 'Album Releases by Ken Wilson'
+    title: "Album Releases by Ken Wilson"
   }
-}
+};
 </script>

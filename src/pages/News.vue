@@ -2,19 +2,19 @@
   <Layout>
     <h1 class="leading-loose font-normal">News</h1>
 
-    <News/>
+    <News />
   </Layout>
 </template>
 
 <script>
-import News from '~/components/News'
+import News from "~/components/News";
 
 export default {
   components: {
     News
   },
   metaInfo: {
-    title: 'Latest News from Ken Wilson'
+    title: "Latest News from Ken Wilson"
   }
-}
+};
 </script>
