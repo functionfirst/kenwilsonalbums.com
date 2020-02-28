@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <h1 class="font-serif font-thin leading-loose text-6xl">Voice of the Tees</h1>
+    <h1 class="font-thin leading-loose text-6xl">Voice of the Tees</h1>
 
     <div class="md:flex">
       <div class="leading-normal flex-1 mr-8">

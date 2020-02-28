@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <h1 class="font-serif leading-loose font-normal">Contact</h1>
+    <h1 class="leading-loose font-normal">Contact</h1>
 
     <div class="md:flex">
       <div class="md:max-w-xs leading-normal">

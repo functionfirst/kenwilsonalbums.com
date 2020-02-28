@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <h1 class="font-serif leading-loose font-normal">News</h1>
+    <h1 class="leading-loose font-normal">News</h1>
 
     <News/>
   </Layout>

@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <h1 class="font-serif leading-loose font-normal">Art</h1>
+    <h1 class="leading-loose font-normal">Art</h1>
 
     <div class="flex justify-between mb-4 items-center">
       <art-filter selected="portraits" />

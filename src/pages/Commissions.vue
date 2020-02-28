@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <div class="leading-normal">
-      <h1 class="font-serif leading-loose font-normal">Commissions</h1>
+      <h1 class="leading-loose font-normal">Commissions</h1>
 
       <div class="flex-col-reverse flex md:flex-row">
         <div class="md:max-w-sm">
