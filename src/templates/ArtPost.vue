@@ -1,18 +1,19 @@
 <template>
   <Layout>
-    <h1 class="font-serif leading-loose font-normal">{{ $page.art.title }}</h1>
-
-    <div class="md:flex items-start">
-      <div class="flex-1 md:mr-12">
+    <div class="max-w-sm lg:max-w-full lg:flex items-start mx-auto">
+      <div class="bg-white p-8 shadow-md flex-1 lg:mr-12">
         <div class="relative">
           <div class="absolute pin"></div>
           <g-image :src="$page.art.image" :alt="`Image of ${$page.art.title}`" />
         </div>
-        <div class="content" v-html="$page.art.content"></div>
       </div>
 
-      <div class="md:w-1/3">
-        <paypal-art-button :posters="posters" :types="types" :item="$page.art" />
+      <div class="lg:w-2/5">
+        <h1 class="leading-normal font-normal mb-4 mt-8 md:mt-0">{{ $page.art.title }}</h1>
+
+        <div class="content" v-html="$page.art.content"></div>
+
+        <paypal-art-button :products="products" :types="types" :item="$page.art" />
       </div>
     </div>
   </Layout>
@@ -29,14 +30,14 @@ query ArtPost ($path: String!) {
 </page-query>
 
 <script>
-import posters from "~/data/posters";
+import products from "~/data/posters";
 import types from "~/data/types";
 import PaypalArtButton from "~/components/PaypalArtButton";
 
 export default {
   data() {
     return {
-      posters,
+      products,
       types
     };
   },
