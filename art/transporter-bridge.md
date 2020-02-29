@@ -1,6 +1,6 @@
 ---
 title: Transporter Bridge
-slug: transporter bridge
+slug: transporter-bridge
 tags: portraits
 homepage: false
 image: /images/transporter.jpg

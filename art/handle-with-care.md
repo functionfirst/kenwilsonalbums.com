@@ -1,6 +1,6 @@
 ---
 title: Handle with Care
-slug: handle with care
+slug: handle-with-care
 tags: portraits
 homepage: true
 image: /images/hwc.br.jpg

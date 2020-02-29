@@ -1,6 +1,6 @@
 ---
 title: Chris Coe
-slug: chris coe
+slug: chris-coe
 tags: portraits
 homepage: false
 image: /images/chris-coe.brownpng.jpg
