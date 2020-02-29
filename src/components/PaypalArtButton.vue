@@ -19,8 +19,13 @@
 
     <Dropdown class="my-4">
       <template v-slot:label>
-        <template v-if="product">{{ product.name }}</template>
-        <template v-else>Select a product option</template>
+        <template v-if="product">
+          <div v-if="product.swatch" class="border border-grey-400 p-px rounded-full mr-2">
+            <div class="m-px h-4 w-4 rounded-full" :style="`background-color: ${product.swatch}`"></div>
+          </div>
+          <div class="flex-1">{{ product.name }}</div>
+        </template>
+        <template v-else>Select an option</template>
       </template>
 
       <div
@@ -36,9 +41,13 @@
         @click="setProduct(index)"
       >
         <div class="flex justify-between items-center py-3 px-4">
+          <div v-if="option.swatch" class="border border-grey-400 p-px rounded-full mr-2">
+            <div class="m-px h-4 w-4 rounded-full" :style="`background-color: ${option.swatch}`"></div>
+          </div>
+
           <div class="flex-1">
             {{ option.name }}
-            <small class="block mt-1">Size: {{ option.dimensions }}</small>
+            <small v-if="option.size" class="block mt-1">Size: {{ option.size }}</small>
           </div>
 
           <div class="font-bold">£{{ option.price }}</div>
@@ -46,10 +55,27 @@
       </div>
     </Dropdown>
 
+    <Dropdown class="my-4" v-if="currentType === types.TSHIRT">
+      <template v-slot:label>
+        <template v-if="size">{{ size }}</template>
+        <template v-else>Select a size</template>
+      </template>
+
+      <div
+        v-for="(size, index) in sizes"
+        :key="index"
+        :class="currentSize === index ? 'bg-grey-900 text-white hover:bg-grey-800' : ' hover:bg-grey-100'"
+        class="border-t border-grey-200 cursor-pointer"
+        @click="setSize(index)"
+      >
+        <div class="flex justify-between items-center py-3 px-4">{{ size }}</div>
+      </div>
+    </Dropdown>
+
     <Dropdown class="my-4">
       <template v-slot:label>
         <template v-if="shipping">{{ shipping.title }}</template>
-        <template v-else>Select a delivery option</template>
+        <template v-else>Select delivery</template>
       </template>
 
       <div
@@ -108,6 +134,7 @@
         />
       </button>
     </form>
+    {{ name }}
   </div>
 </template>
 
@@ -139,11 +166,19 @@ export default {
 
   data() {
     return {
+      sizes: [
+        "S - Small",
+        "M - Medium",
+        "L - Large",
+        "XL - Extra Large",
+        "XXL - Extra Extra Large"
+      ],
       selectType: false,
       selectProduct: false,
       selectShipping: false,
       business: "thewilsonfamily@ntlworld.com",
       currencyCode: "GBP",
+      currentSize: null,
       currentType: null,
       currentProduct: null,
       currentShipping: null,
@@ -158,15 +193,19 @@ export default {
     },
 
     name() {
-      return `${this.item.name} - ${this.product.title}`;
+      if (!this.product) return;
+      if (this.size) {
+        return `${this.item.title}. Product: ${this.product.name}. Size: ${this.size}`;
+      }
+      return `${this.item.title}. Product: ${this.product.name}`;
     },
 
     product() {
       return this.matchingProducts[this.currentProduct];
     },
 
-    name() {
-      return this.product && `${this.item.title} - ${this.product.name}`;
+    size() {
+      return this.currentSize !== null && this.sizes[this.currentSize];
     },
 
     matchingProducts() {
@@ -208,19 +247,17 @@ export default {
         return false;
       }
 
+      if (this.currentType === this.types.TSHIRT && this.currentSize === null) {
+        this.error = "Please select a T-shirt size";
+        return false;
+      }
+
       if (this.currentShipping === null) {
         this.error = "Please select a delivery option";
         return false;
       }
 
       window.location.href = this.paypalUrl;
-    },
-
-    closeDropdown() {
-      console.log("close dropdown");
-      this.selectType = false;
-      this.selectProduct = false;
-      this.selectShipping = false;
     },
 
     formatPrice(value) {
@@ -239,6 +276,10 @@ export default {
 
     setShipping(index) {
       this.currentShipping = index;
+    },
+
+    setSize(index) {
+      this.currentSize = index;
     }
   },
 
@@ -246,6 +287,7 @@ export default {
     currentType() {
       this.currentProduct = null;
       this.currentShipping = null;
+      this.currentSize = null;
       this.error = null;
     },
 

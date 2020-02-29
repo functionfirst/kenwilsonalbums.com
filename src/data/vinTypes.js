@@ -1,7 +1,10 @@
+import { TSHIRT, CARD, CANVAS, POSTER } from '~/data/allTypes';
+
 let types = {
-  CARD: 'Greetings Card',
-  CANVAS: 'Canvas Print',
-  POSTER: 'Poster Print'
+  TSHIRT,
+  CARD,
+  CANVAS,
+  POSTER
 };
 
 export default types;
