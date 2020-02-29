@@ -24,6 +24,11 @@
       </template>
 
       <div
+        class="px-4 py-3 text-danger"
+        v-if="currentType === null"
+      >Please select a product type first</div>
+      <div
+        v-else
         v-for="(option, index) in matchingProducts"
         :key="index"
         :class="currentProduct === index ? 'bg-grey-900 text-white hover:bg-grey-800' : ' hover:bg-grey-100'"
@@ -48,6 +53,11 @@
       </template>
 
       <div
+        class="px-4 py-3 text-danger"
+        v-if="currentType === null"
+      >Please select a product type first</div>
+      <div
+        v-else
         v-for="(post, index) in shippingOptions"
         :key="index"
         :class="currentShipping === index ? 'bg-grey-900 text-white hover:bg-grey-800' : ' hover:bg-grey-100'"
