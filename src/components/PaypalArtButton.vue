@@ -154,7 +154,7 @@ export default {
 
   computed: {
     paypalUrl() {
-      return `https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=${this.business}&item_name=${this.name}&amount=${this.price}&currency_code=${this.currencyCode}&shipping=${this.shipping}`;
+      return `https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=${this.business}&item_name=${this.name}&amount=${this.price}&currency_code=${this.currencyCode}&shipping=${this.shippingPrice}`;
     },
 
     name() {
