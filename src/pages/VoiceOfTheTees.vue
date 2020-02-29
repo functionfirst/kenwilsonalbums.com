@@ -1,26 +1,23 @@
 <template>
   <Layout>
-    <h1 class="font-thin leading-loose text-6xl">Voice of the Tees</h1>
+    <h1 class="font-normal leading-loose">Voice of the Tees</h1>
 
     <div class="md:flex">
-      <div class="leading-normal flex-1 mr-8">
-        <p class="mb-4 text-xl font-medium">
-          Two icons of Teesside
-          <em>Vin Garbutt</em> and the
-          <em>Transporter Bridge</em>.
-        </p>
+      <div class="leading-normal flex-1 md:mr-8">
+        <div class="bg-white p-8 shadow-md flex-1 lg:mr-12">
+          <g-image class="w-full" src="~/images/voiceofthetees.jpg" width="600" />
+        </div>
 
-        <p class="text-xl italic">
-          I have merged two of my sketches together to create this 24 x 16 (61cm x 41cm) canvas print -
-          <em>Voice of the Tees</em>
+        <p class="text-xl italic my-4">
+          I have merged two of my sketches together to create this 24 x 16 (61cm x 41cm) canvas print entitled
+          Voice of the Tees.
         </p>
 
         <p class="my-4">
-          I have spoken to Vin's wife Pat, and with her blessing we have agreed to make this available as a
+          Having spoken to Vin's wife Pat, and with her blessing, we have agreed to make this available as a
           <span
             class="font-bold"
-          >Limited edition</span> of 250 copies! On a
-          <em>first come first served basis</em>.
+          >Limited edition</span> of 250 copies! On a first come first served basis.
         </p>
 
         <p class="my-4">
@@ -48,8 +45,10 @@
           <em>Ken Wilson</em>
         </p>
       </div>
-      <div class="md:w-1/2">
-        <slider :images="images" />
+      <div class="md:w-2/5">
+        <h2
+          class="leading-normal font-normal mb-4 mt-8 md:mt-0"
+        >Icons of Teesside, Vin Garbutt and the Transporter Bridge</h2>
 
         <paypal-art-button :products="products" :types="types" :item="item" />
       </div>
@@ -61,12 +60,10 @@
 import products from "~/data/vin";
 import types from "~/data/vinTypes";
 import PaypalArtButton from "~/components/PaypalArtButton";
-import Slider from "~/components/Slider";
 
 export default {
   components: {
-    PaypalArtButton,
-    Slider
+    PaypalArtButton
   },
 
   data() {
