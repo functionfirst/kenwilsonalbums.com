@@ -51,14 +51,14 @@
       <div class="md:w-1/2">
         <slider :images="images" />
 
-        <paypal-art-button :posters="posters" :types="types" :item="item" />
+        <paypal-art-button :products="products" :types="types" :item="item" />
       </div>
     </div>
   </Layout>
 </template>
 
 <script>
-import posters from "~/data/vin";
+import products from "~/data/vin";
 import types from "~/data/vinTypes";
 import PaypalArtButton from "~/components/PaypalArtButton";
 import Slider from "~/components/Slider";
@@ -80,7 +80,7 @@ export default {
         "~/images/voiceofthetees_framed.jpg"
       ],
 
-      posters,
+      products,
       types
     };
   }
