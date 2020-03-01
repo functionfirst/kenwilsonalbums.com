@@ -134,7 +134,6 @@
         />
       </button>
     </form>
-    {{ name }}
   </div>
 </template>
 
