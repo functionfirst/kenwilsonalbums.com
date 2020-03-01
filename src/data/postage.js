@@ -1,6 +1,16 @@
-import types from '~/data/types';
+import * as types from '~/data/allTypes';
 
 let postage = [];
+
+postage[types.TSHIRT] = [
+  {
+    title: 'UK/Europe',
+    price: 3.5
+  }, {
+    title: 'Rest of the World',
+    price: 9
+  }
+];
 
 postage[types.CARD] = [
   {
