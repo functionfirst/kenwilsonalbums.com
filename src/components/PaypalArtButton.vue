@@ -175,7 +175,7 @@ export default {
       selectType: false,
       selectProduct: false,
       selectShipping: false,
-      business: "thewilsonfamily@ntlworld.com",
+      business: "wilsonfamily@ntlworld.com",
       currencyCode: "GBP",
       currentSize: null,
       currentType: null,
