@@ -1,6 +1,6 @@
 ---
-title: Steve Tilston
-slug: steve tilston
+title: SteveTilston
+slug: stevetilston
 tags: portraits
 homepage: true
 image: /images/steve-tilston.-print-copy-brn.ng.jpg
