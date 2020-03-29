@@ -1,6 +1,6 @@
 ---
-title: Alistair Anderson
-slug: alistair anderson
+title: AlistairAnderson
+slug: alistairanderson
 tags: portraits
 homepage: false
 image: /images/ali-anderson.jpg
