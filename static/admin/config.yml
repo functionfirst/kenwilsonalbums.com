@@ -56,8 +56,8 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Location", name: "location", widget: "string" }
-      - { label: "Start Date", name: "date_start", widget: "date" }
+      - { label: "Location", name: "location", widget: "string", required: false }
+      - { label: "Start Date", name: "date_start", widget: "date", required: false }
       - { label: "End Date", name: "date_start", widget: "date", required: false }
       - label: "Type"
         name: "type"
