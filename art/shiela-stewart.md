@@ -1,6 +1,6 @@
 ---
 title: Shiela Stewart
-slug: 'shielastewart '
+slug: shielastewart
 tags: portraits
 homepage: false
 image: /images/shiela-stewart-print-scan-copy.brnpng.jpg
