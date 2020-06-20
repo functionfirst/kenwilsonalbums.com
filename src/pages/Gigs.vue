@@ -1,6 +1,8 @@
 <template>
   <Layout>
-    <h1 class="leading-loose font-normal">Upcoming Gigs</h1>
+    <h1 class="leading-loose font-normal mb-8">
+      Upcoming Appearances
+    </h1>
 
     <Gigs />
   </Layout>

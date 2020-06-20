@@ -1,6 +1,8 @@
 <template>
   <Layout>
-    <h1 class="leading-loose font-normal">Contact</h1>
+    <h1 class="leading-loose font-normal mb-8">
+      Get in touch with Ken
+    </h1>
 
     <div class="md:flex">
       <div class="md:max-w-xs leading-normal">
@@ -22,7 +24,10 @@
         <p class="mt-6 font-bold">Telephone</p>
 
         <p class="ml-4">
-          <a href="tel:+447905466907" class="text-darker no-underline hover:underline">07905 466 907</a>
+          <a
+            href="tel:+447905466907"
+            class="text-darker no-underline hover:underline"
+          >07905 466 907</a>
         </p>
 
         <p class="mt-6 font-bold">Email</p>
@@ -36,21 +41,33 @@
       </div>
 
       <div class="md:ml-24 md:w-1/3">
-        <p
-          class="mt-4 md:mt-0 mb-2 leading-normal font-bold"
-        >Please use the contact form below to send Ken a message.</p>
+        <p class="mt-4 md:mt-0 mb-2 leading-normal font-bold">Please use the contact form below to send Ken a message.</p>
 
-        <div v-if="error" class="bg-danger mb-2 px-3 py-2 rounded text-white">{{ error }}</div>
+        <div
+          v-if="error"
+          class="bg-danger mb-2 px-3 py-2 rounded text-white"
+        >{{ error }}</div>
 
-        <form method="post" v-on:submit.prevent="handleSubmit" action="/success/">
+        <form
+          method="post"
+          v-on:submit.prevent="handleSubmit"
+          action="/success/"
+        >
           <p hidden>
             <label>
               Don’t fill this out:
-              <input type="text" name="botField" v-model="formData.botField" />
+              <input
+                type="text"
+                name="botField"
+                v-model="formData.botField"
+              />
             </label>
           </p>
 
-          <label for="name" class="block mb-1 cursor-pointer">Your name</label>
+          <label
+            for="name"
+            class="block mb-1 cursor-pointer"
+          >Your name</label>
           <input
             type="text"
             id="name"
@@ -61,7 +78,10 @@
           />
           <span class="hidden invalid mt-1 text-xs">Your Name is required</span>
 
-          <label for="email" class="mt-4 block mb-1 cursor-pointer">Your email</label>
+          <label
+            for="email"
+            class="mt-4 block mb-1 cursor-pointer"
+          >Your email</label>
           <input
             type="email"
             id="email"
@@ -72,7 +92,10 @@
           />
           <span class="hidden invalid mt-1 text-xs">Email is required</span>
 
-          <label for="telephone" class="mt-4 block mb-1 cursor-pointer">Telephone/Mobile</label>
+          <label
+            for="telephone"
+            class="mt-4 block mb-1 cursor-pointer"
+          >Telephone/Mobile</label>
           <input
             type="text"
             id="telephone"
@@ -84,7 +107,10 @@
           <span class="hidden invalid mt-1 text-xs">Telephone is required</span>
 
           <div class="message-wrapper">
-            <label for="message" class="mt-4 block mb-1 cursor-pointer">Message</label>
+            <label
+              for="message"
+              class="mt-4 block mb-1 cursor-pointer"
+            >Message</label>
             <textarea
               name="message"
               class="border border-dark py-2 px-3 rounded w-full h-24"

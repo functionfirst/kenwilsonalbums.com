@@ -1,6 +1,8 @@
 <template>
   <Layout>
-    <h1 class="leading-loose font-normal">News</h1>
+    <h1 class="leading-loose font-normal mb-8">
+      Latest News from Ken Wilson
+    </h1>
 
     <News />
   </Layout>

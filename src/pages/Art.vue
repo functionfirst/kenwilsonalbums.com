@@ -1,12 +1,17 @@
 <template>
   <Layout>
-    <h1 class="leading-loose font-normal">Art</h1>
+    <h1 class="leading-loose font-normal mb-8">
+      Original Pencil Art and Sketches by Ken Wilson
+    </h1>
 
     <div class="md:flex justify-between items-center">
       <art-filter class="mb-4" />
 
       <div class="flex items-center justify-between">
-        <span v-if="$page.allArtPost.pageInfo.totalPages > 1" class="text-sm">Select a page:</span>
+        <span
+          v-if="$page.allArtPost.pageInfo.totalPages > 1"
+          class="text-sm"
+        >Select a page:</span>
         <Pager
           :info="$page.allArtPost.pageInfo"
           :show-navigation="false"
