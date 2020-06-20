@@ -1,24 +1,12 @@
 <template>
   <Homepage>
-
-    <div class="bg-light py-4 md:py-8 px-2">
+    <div class="py-4 md:py-8 px-2">
       <div class="mx-auto max-w-2xl">
-        <h3 class="text-3xl font-thin mb-4">Gigs in 2020</h3>
-        <p class="leading-normal">
-          Due to the ongoing Coronavirus situation and social-distancing rules
-          all of my 2020 Gigs have currently been cancelled.
-        </p>
-
-        <!-- <Card
-          title="Latest Gigs"
-          class="h-full"
-        >
-          <LatestGigs />
-        </Card> -->
+        <LatestGigs />
       </div>
     </div>
 
-    <div class="bg-darker text-white py-4 md:py-8 px-2">
+    <div class="py-4 md:py-8 px-2">
       <div class="mx-auto max-w-2xl">
         <div class="md:flex -mx-4">
           <div class="md:w-1/3 px-4">
@@ -45,7 +33,6 @@
 </template>
 
 <script>
-import Card from "~/components/Card.vue";
 import Intro from "~/components/Intro.vue";
 import LatestNews from "~/components/LatestNews.vue";
 import LatestGigs from "~/components/LatestGigs.vue";
@@ -54,7 +41,6 @@ import VoiceOfTheTees from "~/components/VoiceOfTheTees.vue";
 
 export default {
   components: {
-    Card,
     Intro,
     LatestNews,
     LatestGigs,
