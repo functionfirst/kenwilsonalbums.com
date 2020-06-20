@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="leading-normal text-white">
     <div
       v-for="{ node } in $static.allArtPost.edges"
       :key="node.id"
@@ -20,7 +20,7 @@
       </h3>
 
       <p
-        class="leading-normal my-4 text-sm"
+        class="my-4 text-sm"
         v-html="node.content"
       ></p>
 

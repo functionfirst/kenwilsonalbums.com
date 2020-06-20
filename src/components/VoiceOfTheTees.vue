@@ -1,5 +1,5 @@
 <template>
-  <div class="leading-normal">
+  <div class="leading-normal text-white">
     <g-link
       to="/voice-of-the-tees"
       class="block mb-4 bg-white shadow p-2 hover:bg-dark"
