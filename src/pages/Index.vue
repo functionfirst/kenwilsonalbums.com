@@ -1,31 +1,47 @@
 <template>
-  <Layout>
-    <div class="md:flex -mx-4">
-      <div class="md:w-1/3 px-4">
-        <Card title="Latest News" class="h-full">
-          <LatestNews />
-        </Card>
-      </div>
-      <div class="md:w-1/3 mt-8 md:mt-0 px-4">
-        <Card title="Latest Gigs" class="h-full">
-          <LatestGigs />
-        </Card>
-      </div>
-      <div class="flex-1 mt-8 md:mt-0 px-4">
-        <Card title="Voice of the Tees">
-          <VoiceOfTheTees />
-        </Card>
+  <Homepage>
 
-        <Card title="Latest Art" class="mt-8">
-          <LatestArt />
-        </Card>
+    <div class="bg-light py-4 md:py-8 px-2">
+      <div class="mx-auto max-w-2xl">
+        <h3 class="text-3xl font-thin mb-4">Gigs in 2020</h3>
+        <p class="leading-normal">
+          Due to the ongoing Coronavirus situation and social-distancing rules
+          all of my 2020 Gigs have currently been cancelled.
+        </p>
+
+        <!-- <Card
+          title="Latest Gigs"
+          class="h-full"
+        >
+          <LatestGigs />
+        </Card> -->
       </div>
     </div>
 
-    <Card title="About Ken Wilson" class="mt-8">
-      <Intro />
-    </Card>
-  </Layout>
+    <div class="bg-darker text-white py-4 md:py-8 px-2">
+      <div class="mx-auto max-w-2xl">
+        <div class="md:flex -mx-4">
+          <div class="md:w-1/3 px-4">
+            <LatestNews />
+          </div>
+
+          <div class="md:w-1/3 mt-8 md:mt-0 px-4">
+            <VoiceOfTheTees />
+          </div>
+
+          <div class="md:w-1/3 mt-8 md:mt-0 px-4">
+            <LatestArt />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-light py-4 md:py-8 px-2">
+      <div class="mx-auto max-w-2xl">
+        <Intro />
+      </div>
+    </div>
+  </Homepage>
 </template>
 
 <script>

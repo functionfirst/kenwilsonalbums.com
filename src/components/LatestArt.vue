@@ -1,18 +1,36 @@
 <template>
   <div>
-    <div v-for="{ node } in $static.allArtPost.edges" :key="node.id">
-      <g-link :to="`art/${node.slug}`" class="block no-underline mb-4">
-        <g-image class="block w-full" :alt="`Image of ${node.title}`" :src="node.image" />
+    <div
+      v-for="{ node } in $static.allArtPost.edges"
+      :key="node.id"
+    >
+      <g-link
+        :to="`art/${node.slug}`"
+        class="block mb-4 bg-white shadow p-2 hover:bg-dark"
+      >
+        <g-image
+          class="block w-full"
+          :alt="`Image of ${node.title}`"
+          :src="node.image"
+        />
       </g-link>
 
-      <h2 class="text-lg">{{ node.title }}</h2>
+      <h3 class="font-thin text-2xl">
+        {{ node.title }}
+      </h3>
 
-      <p class="leading-normal my-4 text-sm" v-html="node.content"></p>
+      <p
+        class="leading-normal my-4 text-sm"
+        v-html="node.content"
+      ></p>
 
       <g-link
         :to="`art/${node.slug}`"
-        class="btn border-darker text-darker hover:border-dark"
-      >Buy this artwork &rarr;</g-link>
+        class="btn text-white mt-6"
+      >
+        {{ node.title }}
+        <div class="uppercase mt-2">Buy Now &rarr;</div>
+      </g-link>
     </div>
   </div>
 </template>

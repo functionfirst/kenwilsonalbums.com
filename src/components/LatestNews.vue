@@ -1,24 +1,40 @@
 <template>
-  <div>
-    <g-link
-      :to="node.path"
-      class="no-underline block hover:opacity-75"
+  <div class="text-white leading-normal">
+    <div
       v-for="({ node }) in $static.allNewsPost.edges"
       :key="node.id"
     >
-      <g-image :src="node.image" :alt="`Image for ${node.title}`" class="block w-full" />
+      <g-link
+        :to="node.path"
+        class="block mb-4 bg-white shadow p-2 hover:bg-dark"
+      >
+        <g-image
+          :src="node.image"
+          :alt="`Image for ${node.title}`"
+          class="block w-full"
+        />
+      </g-link>
 
-      <h2 class="text-darker font-thin text-4xl mt-2">{{ node.title }}</h2>
+      <h3 class="font-thin text-2xl">
+        {{ node.title }}
+      </h3>
 
-      <div class="text-darker text-sm my-4">{{ node.date }}</div>
+      <div class="text-sm my-4">
+        {{ node.date }}
+      </div>
 
-      <div class="text-darker leading-normal" v-html="node.content" />
-    </g-link>
+      <div v-html="node.content" />
 
-    <g-link
-      to="/news/"
-      class="btn mt-4 border-darker text-darker hover:border-dark"
-    >Read all News &rarr;</g-link>
+      <g-link
+        to="/news/"
+        class="btn text-white mt-6"
+      >
+        Latest News
+        <div class="uppercase">
+          Read Now &rarr;
+        </div>
+      </g-link>
+    </div>
   </div>
 </template>
 
