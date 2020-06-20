@@ -1,19 +1,41 @@
 <template>
   <Layout>
+    <h1 class="leading-loose font-normal mb-2">
+      {{ $page.art.title }}
+    </h1>
+
+    <p class="flex list-reset mb-4">
+      <g-link
+        to="/art"
+        class="no-underline"
+      >
+        &larr; View all Art
+      </g-link>
+    </p>
+
     <div class="max-w-sm lg:max-w-full lg:flex items-start mx-auto">
       <div class="bg-white p-8 shadow-md flex-1 lg:mr-12">
         <div class="relative">
           <div class="absolute pin"></div>
-          <g-image :src="$page.art.image" :alt="`Image of ${$page.art.title}`" />
+          <g-image
+            :src="$page.art.image"
+            :alt="`Image of ${$page.art.title}`"
+          />
         </div>
       </div>
 
       <div class="lg:w-2/5">
-        <h1 class="leading-normal font-normal mb-4 mt-8 md:mt-0">{{ $page.art.title }}</h1>
 
-        <div class="content" v-html="$page.art.content"></div>
+        <div
+          class="content"
+          v-html="$page.art.content"
+        ></div>
 
-        <paypal-art-button :products="products" :types="types" :item="$page.art" />
+        <paypal-art-button
+          :products="products"
+          :types="types"
+          :item="$page.art"
+        />
       </div>
     </div>
   </Layout>
