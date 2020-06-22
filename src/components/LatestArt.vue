@@ -15,18 +15,20 @@
       {{ latestArt.title }}
     </h3>
 
-    <p
+    <div
       class="my-4 text-sm"
       v-html="latestArt.content"
-    ></p>
+    ></div>
 
-    <g-link
-      :to="`art/${latestArt.slug}`"
-      class="btn text-white mt-6"
-    >
-      {{ latestArt.title }}
-      <div class="uppercase mt-2">Buy Now &rarr;</div>
-    </g-link>
+    <p class="mt-6">
+      <g-link
+        :to="`art/${latestArt.slug}`"
+        class="btn text-white"
+      >
+        {{ latestArt.title }}
+        <span class="block uppercase mt-2">Buy Now &rarr;</span>
+      </g-link>
+    </p>
   </div>
 </template>
 
