@@ -1,39 +1,46 @@
 <template>
   <div class="leading-normal text-white">
-    <div
-      v-for="{ node } in $static.allArtPost.edges"
-      :key="node.id"
+    <g-link
+      :to="`art/${latestArt.slug}`"
+      class="block mb-4 bg-white shadow p-2 hover:bg-dark"
     >
-      <g-link
-        :to="`art/${node.slug}`"
-        class="block mb-4 bg-white shadow p-2 hover:bg-dark"
-      >
-        <g-image
-          class="block w-full"
-          :alt="`Image of ${node.title}`"
-          :src="node.image"
-        />
-      </g-link>
+      <g-image
+        class="block w-full"
+        :alt="`Image of ${latestArt.title}`"
+        :src="latestArt.image"
+      />
+    </g-link>
 
-      <h3 class="font-thin text-2xl">
-        {{ node.title }}
-      </h3>
+    <h3 class="font-thin text-2xl">
+      {{ latestArt.title }}
+    </h3>
 
-      <p
-        class="my-4 text-sm"
-        v-html="node.content"
-      ></p>
+    <p
+      class="my-4 text-sm"
+      v-html="latestArt.content"
+    ></p>
 
-      <g-link
-        :to="`art/${node.slug}`"
-        class="btn text-white mt-6"
-      >
-        {{ node.title }}
-        <div class="uppercase mt-2">Buy Now &rarr;</div>
-      </g-link>
-    </div>
+    <g-link
+      :to="`art/${latestArt.slug}`"
+      class="btn text-white mt-6"
+    >
+      {{ latestArt.title }}
+      <div class="uppercase mt-2">Buy Now &rarr;</div>
+    </g-link>
   </div>
 </template>
+
+<script>
+export default {
+  computed: {
+    latestArt() {
+      const [{ node }, ...rest] = this.$static.allArtPost.edges;
+      return node;
+    }
+  }
+};
+</script>
+
 
 <static-query>
   query {
