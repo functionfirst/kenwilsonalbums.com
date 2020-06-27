@@ -49,7 +49,7 @@
     albumPost (path: $path) {
       title
       aside
-      image (width: 225, quality: 70, fit: inside)
+      image
       content
       reviews
     }

@@ -57,7 +57,7 @@ export default {
           title
           slug
           content
-          image (width: 400, height: 1000, quality: 70, fit: inside)
+          image
         }
       }
     }

@@ -32,7 +32,7 @@ query Art ($page: Int) {
       node {
         id
         slug
-        image (width: 425, height: 425, quality: 60, fit: cover)
+        image
         title
       }
     }

@@ -17,7 +17,7 @@
     newsPost (path: $path) {
       title
       content
-      image (width: 225, quality: 70, fit: inside)
+      image
     }
   }
 </page-query>
