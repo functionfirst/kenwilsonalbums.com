@@ -1,7 +1,7 @@
 ---
 title: Tiger
 slug: tiger
-image: /images/tiger.jpg
+image: static/images/tiger.jpg
 homepage: false
 tags: animal
 date: 2019-01-01

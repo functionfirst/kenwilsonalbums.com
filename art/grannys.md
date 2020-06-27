@@ -3,7 +3,7 @@ title: Grannys
 slug: grannys
 tags: portraits
 homepage: false
-image: /images/granny-s-attic-print-copy.jpg
+image: static/images/granny-s-attic-print-copy.jpg
 date: 2019-04-04T23:00:00.000Z
 ---
 Picture of Grannys Attic
