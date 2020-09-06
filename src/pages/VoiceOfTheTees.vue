@@ -1,6 +1,8 @@
 <template>
   <Layout>
-    <h1 class="font-normal leading-loose">Icons of Teesside, Vin Garbutt and the Transporter Bridge</h1>
+    <h1
+      class="font-normal leading-tight mb-4"
+    >Icons of Teesside, Vin Garbutt and the Transporter Bridge</h1>
 
     <div class="md:flex">
       <div class="leading-normal flex-1 md:mr-8">
@@ -21,7 +23,8 @@
           class="my-4"
         >Vin spent a lot of time, being looked after by our wonderful NHS nurses, doctors and staff, at James Cook Hospital, and over the past couple years, I have also required the services of these wonderful people.</p>
 
-        <h3>Presentation</h3>
+        <h2>South Cleveland Heart Fund Presentation</h2>
+
         <p class="my-4">
           On September 4th 2020, Pat Garbutt, Chris and I, met with Dr Adrian Davies (chairman) and other members of the
           <em>South Cleveland Heart Fund</em>,
@@ -38,15 +41,16 @@
         <p class="my-4">
           Thank you,
           <br />
-          <em>Ken Wilson</em>
+          <em>Ken</em>
         </p>
       </div>
-      <div class="md:w-2/5 bg-white p-8 shadow-md">
-        <h2
-          class="leading-normal font-normal mb-4 mt-8 md:mt-0"
-        >Icons of Teesside, Vin Garbutt and the Transporter Bridge</h2>
+      <div class="md:w-2/5 bg-white p-4 md:p-8 shadow-md">
+        <h3 class="mb-4 font-semibold">Voice of the Tees</h3>
+        <g-image class="w-full" src="~/images/voiceofthetees.jpg" width="400" />
 
-        <g-image class="w-full" src="~/images/voiceofthetees.jpg" width="600" />
+        <p
+          class="my-4 leading-tight"
+        >Voice of the Tees is available for you to purchase in a variety of formats below.</p>
 
         <paypal-art-button :products="products" :types="types" :item="item" />
       </div>
