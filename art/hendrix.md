@@ -1,9 +1,9 @@
 ---
 title: Hendrix
 slug: hendrix
-tags: portraits
-homepage: true
-image: /images/hendrix.bpng.jpg
-date: 2019-07-14T21:57:19.987Z
+tags: portrait
+homepage: false
+image: /images/jimi-hendrixxxxxxx-copy.jpg
+date: 2020-09-28T12:05:41.297Z
 ---
-Pencil sketch of Jimmy Hendrix
+Poster of Hendrix from original pencil sketch!
