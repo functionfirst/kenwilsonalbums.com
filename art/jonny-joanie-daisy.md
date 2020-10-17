@@ -1,6 +1,6 @@
 ---
 title: Jonny Joanie Daisy
-slug: jonny joaniedaisy
+slug: jonnyjoaniedaisy
 tags: portrait
 homepage: false
 image: /images/jonny-joanie-daisy.poster-print-aaaaapng.jpg
