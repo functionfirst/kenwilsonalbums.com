@@ -1,9 +1,9 @@
 ---
-title: MonaLisa
+title: Mona Lisa
 slug: monalisa
-tags: portraits
-homepage: false
-image: /images/mona-print-copy.jpg
-date: 2019-04-06T13:48:33.744Z
+tags: portrait
+homepage: true
+image: /images/mona-lisa.jpg
+date: 2020-11-23T22:25:01.095Z
 ---
-Picture of the Mona Lisa
+Painting of my earlier sketch of Mona Lisa.
