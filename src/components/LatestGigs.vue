@@ -1,6 +1,6 @@
 <template>
   <div class="bg-light rounded-sm p-4 shadow">
-
+    <!--
     <div class="flex items-start">
       <svg
         height="50"
@@ -22,8 +22,8 @@
         </p>
       </div>
     </div>
+    -->
 
-    <!--
     <div class="mb-6" v-for="{ node } in $static.allGigsPost.edges" :key="node.id">
       <div class="text-darker text-sm mb-1">{{ format(node.date_start, 'ddd, Do MMMM YYYY') }}</div>
       <a
@@ -39,7 +39,6 @@
     </div>
 
     <g-link to="/gigs/" class="btn border-darker text-darker hover:border-dark">See all Gigs &rarr;</g-link>
-    -->
   </div>
 </template>
 
