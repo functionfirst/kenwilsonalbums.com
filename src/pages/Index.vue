@@ -1,10 +1,12 @@
 <template>
   <Homepage>
+    <!--
     <div class="py-4 md:py-8 px-2">
       <div class="mx-auto max-w-2xl">
         <LatestGigs />
       </div>
     </div>
+    -->
 
     <div class="py-4 md:py-8 px-2">
       <div class="mx-auto max-w-2xl">
