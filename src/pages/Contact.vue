@@ -25,9 +25,9 @@
 
         <p class="ml-4">
           <a
-            href="tel:+447905466907"
+            href="tel:+447905446907"
             class="text-darker no-underline hover:underline"
-          >07905 466 907</a>
+          >07905 446 907</a>
         </p>
 
         <p class="mt-6 font-bold">Email</p>
@@ -133,15 +133,15 @@
 </template>
 
 <style scoped>
-label ~ input:invalid,
+label~input:invalid,
 input:invalid,
 textarea:invalid {
   color: salmon;
   border: 1px solid salmon;
 }
 
-input:invalid + .invalid,
-textarea:invalid + .invalid {
+input:invalid+.invalid,
+textarea:invalid+.invalid {
   color: salmon;
   display: block;
 }
