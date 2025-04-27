@@ -1,7 +1,7 @@
 ---
 title: Inishowen Folk Festival
-location: Ireland
-date_start: 2025-03-24T17:29:39.674Z
+location: 'Donegal, Ireland'
+date_start: 2025-03-24T09:02:56.467Z
 type: solo
 ---
 
