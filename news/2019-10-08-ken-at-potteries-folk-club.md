@@ -1,6 +1,6 @@
 ---
 title: Ken
-date: 2023-03-01T12:14:26.951Z
+date: 2025-04-27T12:14:26.951Z
 slug: Solo Bookings
 image: /images/ken.jpg
 ---
