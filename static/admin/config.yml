@@ -55,10 +55,10 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Title", name: "title", widget: "string", required: true }
       - { label: "Location", name: "location", widget: "string", required: false }
       - { label: "Start Date", name: "date_start", widget: "date", required: false }
-      - { label: "End Date", name: "date_start", widget: "date", required: false }
+      - { label: "End Date", name: "date_end", widget: "date", required: false }
       - label: "Type"
         name: "type"
         widget: "select"
