@@ -1,7 +1,7 @@
 ---
 title: Foundry Workers
 slug: foundryworkers
-tags: portrait
+tags: animals
 homepage: true
 image: /images/243387877_1229971780839101_2346768388260082060_n.jpg
 date: 2021-10-27T15:38:20.268Z
